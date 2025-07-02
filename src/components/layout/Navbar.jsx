@@ -1,29 +1,35 @@
 import { useState, useEffect, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaLeaf } from "react-icons/fa";
-import logo from "../../assets/logo.png"; // ✅ Your logo path
+import logo from "../../assets/logo.png";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const toggleRef = useRef(null); // 🔁 New ref for the toggle button
 
   const navLinks = [
-    { label: "Programmes", href: "#programmes" },
+    { label: "Programs", href: "#programs" },
     { label: "Workshops", href: "#workshops" },
     { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ];
 
-  // ✅ Close mobile menu on outside click
+  // ✅ Improved outside click logic
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        mobileMenuOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        toggleRef.current &&
+        !toggleRef.current.contains(event.target)
+      ) {
         setMobileMenuOpen(false);
       }
     };
-    if (mobileMenuOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
+
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -31,22 +37,22 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-white/20 shadow-md">
-      {/* Floating decorative leaf */}
+      {/* Decorative Leaf */}
       <div className="absolute -top-8 -right-8 text-emerald-200/30 text-7xl -z-10">
         <FaLeaf className="transform -rotate-45" />
       </div>
 
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo + Branding */}
+        {/* Logo */}
         <a href="/" className="flex items-center space-x-3 group">
           <img
             src={logo}
             alt="Aatmya Yoga Logo"
-            className="h-14 w-16  shadow-sm"
+            className="h-14 w-16 shadow-sm"
           />
         </a>
 
-        {/* Desktop Menu */}
+        {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-10">
           {navLinks.map((link, i) => (
             <a
@@ -59,17 +65,18 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#programmes"
-            className="ml-4 bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-600 hover:to-teal-500 text-white px-6 py-2 rounded-full font-light tracking-wider shadow-lg hover:shadow-emerald-200/50 transition-all duration-500 transform hover:scale-[1.03]"
+            href="tel:8281094117"
+            className="ml-4 bg-gradient-to-r from-[#9f7164] to-[#7a5a50] text-white font-light rounded-full shadow-sm hover:shadow-md transition-all duration-500 px-6 py-2"
           >
             Begin Journey
           </a>
         </div>
 
-        {/* Mobile Toggle */}
+        {/* Toggle Button */}
         <button
+          ref={toggleRef}
           className="md:hidden text-emerald-700/80 hover:text-emerald-600 focus:outline-none transition-colors duration-500"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={() => setMobileMenuOpen((prev) => !prev)}
         >
           {mobileMenuOpen ? (
             <FiX className="h-7 w-7" />
@@ -96,8 +103,8 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#programmes"
-            className="block mt-4 text-center bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-600 hover:to-teal-500 text-white py-3 rounded-full font-light tracking-wider shadow-lg transition-all duration-300"
+            href="tel:8281094117"
+            className="block mt-4 text-center bg-gradient-to-r from-[#9f7164] to-[#7a5a50] text-white font-light rounded-full shadow-sm hover:shadow-md transition-all duration-500 px-6 py-2"
             onClick={() => setMobileMenuOpen(false)}
           >
             Begin Journey

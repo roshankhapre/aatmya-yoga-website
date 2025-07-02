@@ -92,12 +92,28 @@ export default function ContactForm() {
             </ul>
           </div>
 
-          {/* Form */}
-          <form className="space-y-6">
+          <form
+            className="space-y-6"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const name = e.target.name.value;
+              const email = e.target.email.value;
+              const message = e.target.message.value;
+
+              const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. I would like to say: ${message}`;
+              const whatsappURL = `https://wa.me/918281094117?text=${encodeURIComponent(
+                whatsappMessage
+              )}`;
+
+              window.open(whatsappURL, "_blank");
+            }}
+          >
             <div>
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
+                required
                 className="w-full px-5 py-3 rounded-lg border border-[#d8c3b6] focus:outline-none focus:ring-1 focus:ring-[#9f7164] focus:border-[#9f7164] bg-white/90 text-[#5a4a42] placeholder-[#b7a9a0] font-light transition-all duration-300"
               />
             </div>
@@ -105,15 +121,19 @@ export default function ContactForm() {
             <div>
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
+                required
                 className="w-full px-5 py-3 rounded-lg border border-[#d8c3b6] focus:outline-none focus:ring-1 focus:ring-[#9f7164] focus:border-[#9f7164] bg-white/90 text-[#5a4a42] placeholder-[#b7a9a0] font-light transition-all duration-300"
               />
             </div>
 
             <div>
               <textarea
+                name="message"
                 rows="4"
                 placeholder="Your Message"
+                required
                 className="w-full px-5 py-3 rounded-lg border border-[#d8c3b6] focus:outline-none focus:ring-1 focus:ring-[#9f7164] focus:border-[#9f7164] bg-white/90 text-[#5a4a42] placeholder-[#b7a9a0] font-light transition-all duration-300"
               ></textarea>
             </div>
@@ -122,7 +142,7 @@ export default function ContactForm() {
               type="submit"
               className="w-full bg-gradient-to-r from-[#9f7164] to-[#7a5a50] hover:from-[#8b6358] hover:to-[#6d4f46] text-white py-3 rounded-full font-light tracking-wide shadow-sm hover:shadow-md transition-all duration-500 transform hover:scale-[1.02]"
             >
-              Send with Gratitude
+              Send
             </button>
           </form>
         </div>

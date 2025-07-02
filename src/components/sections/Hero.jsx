@@ -69,9 +69,14 @@ export default function Hero() {
                 <p className="text-xl md:text-2xl font-light mb-8 opacity-90 leading-relaxed">
                   {slide.subtitle}
                 </p>
-                <button className="bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-8 rounded-full transition-all duration-500 border border-white/30 hover:border-white/50 backdrop-blur-sm hover:shadow-lg hover:scale-105">
+                <a
+                  href="https://wa.me/918281094117?text=Hi%2C%20I'm%20ready%20to%20start%20my%20yoga%20journey.%20Please%20guide%20me%20with%20the%20next%20steps."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-white/10 hover:bg-white/20 text-white font-medium py-3 px-8 rounded-full transition-all duration-500 border border-white/30 hover:border-white/50 backdrop-blur-sm hover:shadow-lg hover:scale-105"
+                >
                   Start Your Practice Today
-                </button>
+                </a>
               </div>
             </div>
           </SwiperSlide>

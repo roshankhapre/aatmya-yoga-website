@@ -147,27 +147,18 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center text-[#c8b6a8] text-sm">
-          <div className="mb-4 md:mb-0">
+          <div className="mb-2 md:mb-0">
             © {new Date().getFullYear()} Aatmya Yoga. All rights reserved.
           </div>
-          <div className="flex space-x-6">
+          <div>
+            Built by{" "}
             <a
-              href="#"
-              className="hover:text-white transition-colors duration-300"
+              href="https://hiddenleaftechnologies.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors duration-300 underline underline-offset-2"
             >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="hover:text-white transition-colors duration-300"
-            >
-              Terms of Service
-            </a>
-            <a
-              href="#"
-              className="hover:text-white transition-colors duration-300"
-            >
-              Refund Policy
+              Hidden Leaf Technologies
             </a>
           </div>
         </div>

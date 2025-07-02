@@ -12,49 +12,55 @@ const workshops = [
     title: "196 Yoga Sutras Workshop",
     desc: "Explore all 196 sutras of Patanjali with guided study and real-life application. Ideal for deepening your philosophical foundation.",
     tag: "Philosophy",
-
     img: workshopImg1,
     color: "from-amber-100/30 to-amber-200/30",
+    whatsappMessage:
+      "Hi, I'm interested in the 196 Yoga Sutras Workshop. Please share more details. Thank you!",
   },
   {
     title: "Kids Yoga Sequencing Workshop",
     desc: "Master creative storytelling and sequencing for kids. Learn how to build engaging and age-appropriate kids yoga classes.",
     tag: "Kids Yoga",
-
     img: workshopImg2,
     color: "from-pink-100/30 to-pink-200/30",
+    whatsappMessage:
+      "Hi, I'm interested in the Kids Yoga Sequencing Workshop. Please share more details. Thank you!",
   },
   {
     title: "Therapy Yoga Sequencing Workshop",
     desc: "Design safe, evidence-informed sequences for back pain, stress, and chronic conditions using therapeutic frameworks.",
     tag: "Yoga Therapy",
-
     img: workshopImg3,
     color: "from-blue-100/30 to-blue-200/30",
+    whatsappMessage:
+      "Hi, I'm interested in the Therapy Yoga Sequencing Workshop. Kindly send more info. Thank you!",
   },
   {
     title: "Prenatal Yoga Sequencing Workshop",
     desc: "Build empowering prenatal classes. Learn trimester-specific sequencing, safety guidelines, and confidence-building practices.",
     tag: "Prenatal",
-
     img: workshopImg4,
     color: "from-purple-100/30 to-purple-200/30",
+    whatsappMessage:
+      "Hi, I'm interested in the Prenatal Yoga Sequencing Workshop. Please provide more details. Thank you!",
   },
   {
     title: "Kids Yoga Themes Workshop",
     desc: "Create themed kids classes like jungle safaris or underwater adventures. Includes tools for storytelling, games, and engagement.",
     tag: "Creative Teaching",
-
     img: workshopImg5,
     color: "from-teal-100/30 to-teal-200/30",
+    whatsappMessage:
+      "Hi, I'm interested in the Kids Yoga Themes Workshop. Please share workshop details. Thank you!",
   },
   {
     title: "Surya Namaskar Variations Workshop",
     desc: "Go beyond the basics of sun salutations with creative variations to enhance strength, flexibility, and flow adaptability.",
     tag: "Asana Practice",
-
     img: workshopImg6,
     color: "from-orange-100/30 to-orange-200/30",
+    whatsappMessage:
+      "Hi, I'm interested in the Surya Namaskar Variations Workshop. Kindly send more information. Thank you!",
   },
 ];
 
@@ -64,20 +70,20 @@ export default function Workshops() {
       id="workshops"
       className="relative py-28 bg-gradient-to-b from-[#fbf8f5] to-[#f1e9e1] overflow-hidden"
     >
-      {/* Floating background elements */}
+      {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-24 left-10 w-44 h-44 rounded-full bg-amber-100/10 blur-2xl"></div>
         <div className="absolute bottom-1/4 right-16 w-60 h-60 rounded-full bg-teal-100/10 blur-2xl"></div>
       </div>
 
-      {/* Subtle paper-like texture */}
+      {/* Texture */}
       <div
         className="absolute inset-0 opacity-5 mix-blend-multiply"
         style={{ backgroundImage: `url(${bgTexture})`, backgroundSize: "35%" }}
       ></div>
 
       <div className="relative z-10 container mx-auto px-6 max-w-7xl">
-        {/* Section Heading */}
+        {/* Section heading */}
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-serif font-light text-[#5f4b44] mb-6 tracking-wide">
             Sacred Learning Spaces
@@ -89,19 +95,19 @@ export default function Workshops() {
           <div className="w-24 h-px bg-[#c8a798] opacity-50 mx-auto mt-6"></div>
         </div>
 
-        {/* Workshop Cards Grid */}
+        {/* Cards Grid */}
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {workshops.map((workshop, index) => (
             <div
               key={index}
               className="relative bg-white/90 backdrop-blur-lg border border-[#e8dacc] rounded-2xl p-6 shadow-md hover:shadow-lg transition-all duration-300 group overflow-hidden"
             >
-              {/* Gradient Hover Overlay */}
+              {/* Gradient hover overlay */}
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${workshop.color} opacity-0 group-hover:opacity-10 transition-opacity duration-700 -z-10 rounded-2xl`}
               ></div>
 
-              {/* Workshop Image */}
+              {/* Image */}
               <div className="relative h-48 w-full mb-6 rounded-xl overflow-hidden shadow-sm">
                 <img
                   src={workshop.img}
@@ -109,14 +115,12 @@ export default function Workshops() {
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent"></div>
-                <div
-                  className={`absolute bottom-3 left-3 px-3 py-1 text-xs font-light rounded-full backdrop-blur-sm bg-white/80 text-[#5a4a42]`}
-                >
+                <div className="absolute bottom-3 left-3 px-3 py-1 text-xs font-light rounded-full backdrop-blur-sm bg-white/80 text-[#5a4a42]">
                   {workshop.tag}
                 </div>
               </div>
 
-              {/* Content */}
+              {/* Text Content */}
               <h3 className="text-2xl font-serif font-light text-[#5a4a42] mb-3 group-hover:text-[#9f7164] transition-colors duration-300">
                 {workshop.title}
               </h3>
@@ -126,11 +130,21 @@ export default function Workshops() {
 
               {/* Date & Button */}
               <p className="text-sm text-[#9f7164] mb-5 font-light flex items-center gap-2">
-                <FaCalendarAlt className="text-[#c8a798]" /> {workshop.date}
+                <FaCalendarAlt className="text-[#c8a798]" />{" "}
+                {/* Optional: add date if needed */}
               </p>
-              <button className="w-full flex items-center justify-center gap-2 px-5 py-2.5 rounded-full border border-[#d8c3b6] text-[#7a6359] hover:border-[#9f7164] hover:text-[#9f7164] transition-all duration-300 bg-white shadow hover:shadow-md text-sm font-light">
-                <FaLeaf className="text-[#9f7164] opacity-70" /> Register Now
-              </button>
+
+              <a
+                href={`https://wa.me/918281094117?text=${encodeURIComponent(
+                  workshop.whatsappMessage
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex items-center justify-center gap-2 px-5 py-2.5 rounded-full border border-[#d8c3b6] text-[#7a6359] hover:border-[#9f7164] hover:text-[#9f7164] transition-all duration-300 bg-white shadow hover:shadow-md text-sm font-light"
+              >
+                <FaLeaf className="text-[#9f7164] opacity-70" />
+                Register Now
+              </a>
             </div>
           ))}
         </div>

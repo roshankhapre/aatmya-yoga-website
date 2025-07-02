@@ -117,9 +117,14 @@ export default function Testimonials() {
 
             {/* CTA Button */}
             <div className="mt-10 text-center">
-              <button className="px-6 py-2 bg-white text-[#7a6359] font-light tracking-wide rounded-full border border-[#d8c3b6] hover:border-[#9f7164] hover:text-[#9f7164] transition-all duration-500 shadow-sm hover:shadow-md">
+              <a
+                href="https://wa.me/918281094117?text=Hi%2C%20I%20would%20love%20to%20join%20your%20yoga%20community.%20Please%20share%20more%20details!"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-2 bg-white text-[#7a6359] font-light tracking-wide rounded-full border border-[#d8c3b6] hover:border-[#9f7164] hover:text-[#9f7164] transition-all duration-500 shadow-sm hover:shadow-md"
+              >
                 Join Our Community
-              </button>
+              </a>
             </div>
           </div>
 
