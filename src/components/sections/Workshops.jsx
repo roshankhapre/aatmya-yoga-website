@@ -5,7 +5,7 @@ import workshopImg2 from "../../assets/kids_yoga_sequencing_workshop.webp";
 import workshopImg3 from "../../assets/therapy_yoga_sequencing_workshop (1).webp";
 import workshopImg4 from "../../assets/prenatal_yoga_sequencing_workshop.webp";
 import workshopImg5 from "../../assets/kids_yoga_themes_workshop (1).webp";
-import workshopImg6 from "../../assets/surya_namaskar_variations_workshop.webp";
+import workshopImg6 from "../../assets/2surya-namaskar (2).webp";
 
 const workshops = [
   {

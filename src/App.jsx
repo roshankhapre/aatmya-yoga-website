@@ -8,11 +8,13 @@ import Workshops from "./components/sections/Workshops";
 import Accreditation from "./components/sections/Accreditation";
 import AboutSection from "./components/sections/AboutSection";
 import ContactForm from "./components/sections/ContactForm";
+import FloatingContactButtons from "./components/sections/FloatingContactButtons";
 
 export default function App() {
   return (
     <div className="font-sans bg-primary-light text-gray-800">
       <Navbar />
+      <FloatingContactButtons />
       <Hero />
       <AboutSection />
       <Programs />
