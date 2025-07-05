@@ -9,6 +9,7 @@ import Accreditation from "./components/sections/Accreditation";
 import AboutSection from "./components/sections/AboutSection";
 import ContactForm from "./components/sections/ContactForm";
 import FloatingContactButtons from "./components/sections/FloatingContactButtons";
+import TeenYogaTraining from "./components/sections/TeenYogaTraining";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <FloatingContactButtons />
       <Hero />
       <AboutSection />
+      <TeenYogaTraining />
       <Programs />
       <Testimonials />
       <Workshops />

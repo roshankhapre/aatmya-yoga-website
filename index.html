@@ -26,13 +26,16 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://www.aatmyayoga.com/" />
 
-    <!-- Favicon & App Icons -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Favicon Setup from RealFaviconGenerator -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5a4a42" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Geo / Local SEO -->
     <meta name="geo.region" content="IN-MP" />
@@ -83,7 +86,7 @@
         "@type": "YogaStudio",
         "name": "Aatmya Yoga",
         "url": "https://www.aatmyayoga.com",
-        "logo": "https://www.aatmyayoga.com/images/logo.png",
+        "logo": "https://www.aatmyayoga.com/assets/logo.png",
         "description": "Online yoga classes, workshops and teacher training programs based in Indore, serving students across India.",
         "telephone": "+918281094117",
         "email": "yogasteni@gmail.com",
@@ -145,31 +148,11 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Open+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-  </head>
 
-  <body class="font-sans text-gray-800 bg-[#f9f5f0]">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-XXXXXX");
-    </script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Google Analytics -->
+    <!-- ✅ Google Analytics 4 Integration -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"
+      src="https://www.googletagmanager.com/gtag/js?id=G-RGHVQD0773"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -177,7 +160,12 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "G-XXXXXX");
+      gtag("config", "G-RGHVQD0773");
     </script>
+  </head>
+
+  <body class="font-sans text-gray-800 bg-[#f9f5f0]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
