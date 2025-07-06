@@ -1,6 +1,6 @@
 import { FaCalendarAlt, FaLeaf } from "react-icons/fa";
 import bgTexture from "../../assets/pattern-yoga-img.webp";
-import workshopImg1 from "../../assets/196_yoga_sutras_workshop (2).webp";
+import workshopImg1 from "../../assets/196_yoga_sutras_workshop (3).webp";
 import workshopImg2 from "../../assets/kids_yoga_sequencing_workshop.webp";
 import workshopImg3 from "../../assets/therapy_yoga_sequencing_workshop (1).webp";
 import workshopImg4 from "../../assets/prenatal_yoga_sequencing_workshop.webp";
