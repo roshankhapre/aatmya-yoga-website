@@ -10,6 +10,7 @@ import AboutSection from "./components/sections/AboutSection";
 import ContactForm from "./components/sections/ContactForm";
 import FloatingContactButtons from "./components/sections/FloatingContactButtons";
 import TeenYogaTraining from "./components/sections/TeenYogaTraining";
+import FounderSection from "./components/sections/FounderSection";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <FloatingContactButtons />
       <Hero />
       <AboutSection />
+      <FounderSection />
       <TeenYogaTraining />
       <Programs />
       <Testimonials />
