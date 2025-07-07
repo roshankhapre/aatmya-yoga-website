@@ -97,10 +97,10 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <FaEnvelope className="mt-1 text-[#c8b6a8]" />
                 <a
-                  href="mailto:hello@aatmyayoga.com"
+                  href="mailto:yogasteni@gmail.com"
                   className="hover:text-white transition-colors duration-300"
                 >
-                  hello@aatmyayoga.com
+                  yogasteni@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
