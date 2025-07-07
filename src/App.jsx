@@ -19,8 +19,8 @@ export default function App() {
       <FloatingContactButtons />
       <Hero />
       <AboutSection />
-      <FounderSection />
       <TeenYogaTraining />
+      <FounderSection />
       <Programs />
       <Testimonials />
       <Workshops />

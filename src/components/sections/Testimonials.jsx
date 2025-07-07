@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { FaQuoteLeft, FaLeaf } from "react-icons/fa";
 import bgPattern from "../../assets/yoga-pattern.jpg";
-import avatar1 from "../../assets/testimonial-female-2.webp";
-import avatar2 from "../../assets/testimonial-female-3.webp";
+import avatar1 from "../../assets/sharddha.webp";
+import avatar2 from "../../assets/Luu Ly.JPG";
 import avatar3 from "../../assets/testimonial-female.webp/";
 import avatar4 from "../../assets/testimonial-male.webp";
 
@@ -10,14 +10,14 @@ const testimonials = [
   {
     quote:
       "Joining Aatmya Yoga has transformed my daily life. The online classes feel just as personal and powerful as being in a studio.",
-    author: "Sonal, Indore",
+    author: "Shraddha, Indore",
     avatar: avatar1,
     color: "from-amber-100/30 to-amber-200/30",
   },
   {
     quote:
       "Their workshops helped me deepen my knowledge and build confidence in my practice.",
-    author: "Prachi, Indore",
+    author: "Luu Ly, Vietnam",
     avatar: avatar2,
     color: "from-teal-100/30 to-teal-200/30",
   },
