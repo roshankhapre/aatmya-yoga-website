@@ -11,6 +11,7 @@ import ContactForm from "./components/sections/ContactForm";
 import FloatingContactButtons from "./components/sections/FloatingContactButtons";
 import TeenYogaTraining from "./components/sections/TeenYogaTraining";
 import FounderSection from "./components/sections/FounderSection";
+import TeamSection from "./components/sections/TeamSection";
 
 export default function App() {
   return (
@@ -18,9 +19,11 @@ export default function App() {
       <Navbar />
       <FloatingContactButtons />
       <Hero />
+      <TeenYogaTraining />
       <AboutSection />
       <FounderSection />
-      <TeenYogaTraining />
+
+      <TeamSection />
       <Programs />
       <Testimonials />
       <Workshops />
