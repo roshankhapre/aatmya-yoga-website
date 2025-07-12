@@ -11,7 +11,7 @@ import { FaLeaf, FaOm } from "react-icons/fa";
 
 export default function TeenYogaTraining() {
   // Compare today's date with July 10, 2024
-  const today = new Date("2024-07-05"); // simulate an earlier date
+  const today = new Date(); // simulate an earlier date
 
   const earlyBirdEnd = new Date("2024-07-10T23:59:59");
   const isEarlyBird = today < earlyBirdEnd;
