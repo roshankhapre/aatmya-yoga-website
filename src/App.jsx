@@ -12,6 +12,7 @@ import FloatingContactButtons from "./components/sections/FloatingContactButtons
 import TeenYogaTraining from "./components/sections/TeenYogaTraining";
 import FounderSection from "./components/sections/FounderSection";
 import TeamSection from "./components/sections/TeamSection";
+import TeacherTraining from "./components/sections/TeacherTraining";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
 
       <TeamSection />
       <Programs />
+      <TeacherTraining />
       <Testimonials />
       <Workshops />
       <ContactForm />

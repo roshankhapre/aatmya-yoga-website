@@ -3,8 +3,8 @@ import { FaQuoteLeft, FaLeaf } from "react-icons/fa";
 import bgPattern from "../../assets/yoga-pattern.jpg";
 import avatar1 from "../../assets/sharddha.webp";
 import avatar2 from "../../assets/Luu Ly.JPG";
-import avatar3 from "../../assets/testimonial-female.webp/";
-import avatar4 from "../../assets/testimonial-male.webp";
+import avatar3 from "../../assets/testimonial1.JPG";
+import avatar4 from "../../assets/testimonial.JPG";
 
 const testimonials = [
   {
@@ -24,14 +24,14 @@ const testimonials = [
   {
     quote:
       "I love how accessible and welcoming the sessions are — even as a beginner, I feel completely supported.",
-    author: "Divya, Pune",
+    author: "Nurismita, Assam",
     avatar: avatar3,
     color: "from-pink-100/30 to-pink-200/30",
   },
   {
     quote:
       "The flexibility of on-demand and live sessions fits perfectly into my busy schedule. Aatmya Yoga is a blessing.",
-    author: "Raj, Mumbai",
+    author: "Sonali Pawar, Maharashtra",
     avatar: avatar4,
     color: "from-purple-100/30 to-purple-200/30",
   },
