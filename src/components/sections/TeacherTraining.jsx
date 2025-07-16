@@ -1,9 +1,9 @@
 import { FaLeaf, FaCertificate, FaRegSmile, FaChild } from "react-icons/fa";
 import { GiMeditation, GiLotus } from "react-icons/gi";
-import yogaImg from "../../assets/yoga-trainer.webp";
-import kidImg from "../../assets/kids_yoga_sequencing_workshop.webp";
+import yogaImg from "../../assets/face_yoga_expression_science_create_the.webp";
+import kidImg from "../../assets/full-shot-woman-kid-with-laptop.webp";
 import pranayamImg from "../../assets/pranayama_mudra_teacher_training_real_image.webp";
-import faceImg from "../../assets/2surya-namaskar (2).webp";
+import faceImg from "../../assets/face_yoga_expression_science_create_the.webp";
 import faceTrainImg from "../../assets/face_yoga_teacher_training_level_2_1_month (2).webp";
 import faceExpImg from "../../assets/beautiful-female-dresses-white-casual-t-shirt-meditating-with-eyes-closed-relaxing-body-clearing-mind.webp";
 import yogaTheraphyImg from "../../assets/woman-practising-yoga-gym-with-trainer.webp";
@@ -128,9 +128,6 @@ function ProgramCard({ program }) {
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
           loading="lazy"
         />
-        <span className="absolute top-3 left-3 bg-amber-500/90 text-white text-xs px-3 py-1 rounded-full font-semibold shadow-md">
-          {program.badge}
-        </span>
       </div>
       <div className="p-5">
         <div className="flex items-center gap-3 text-[#7a5a50] mb-2 text-sm">
