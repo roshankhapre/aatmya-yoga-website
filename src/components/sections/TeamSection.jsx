@@ -1,4 +1,7 @@
 import mentorImage from "../../assets/dr-shalini-verma-tonk.jpg";
+import kunalImage from "../../assets/kunal-mishra.jpg";
+import rajaniImage from "../../assets/dr-rajani-bala.jpg";
+import vanshImage from "../../assets/vansh-raghav.jpg";
 import { FaLeaf, FaOm } from "react-icons/fa";
 
 export default function TeamSection() {
@@ -12,15 +15,33 @@ export default function TeamSection() {
         "Specializes in dosha balancing, detoxification, and natural restoration through classical Ayurvedic principles.",
       image: mentorImage,
     },
-    // Add more team members here as needed:
-    // {
-    //   id: 2,
-    //   name: "Next Team Member",
-    //   role: "Role",
-    //   experience: "Experience",
-    //   description: "Description",
-    //   image: "path/to/image.jpg"
-    // }
+    {
+      id: 2,
+      name: "Kunal Mishra",
+      role: "Advanced Yoga Master",
+      experience: "6+ years in advanced practices and alignment precision",
+      description:
+        "Specializes in Hatha yoga and advanced anatomy-based alignment, helping students refine postures and avoid injuries with deeper body awareness.",
+      image: kunalImage,
+    },
+    {
+      id: 3,
+      name: "Dr. Rajani Bala",
+      role: "Yoga Therapist",
+      experience: "3+ years of therapeutic yoga interventions",
+      description:
+        "Blends yogic science with modern medical knowledge to craft personalized programs for lifestyle disorders, anxiety, and hormonal balance.",
+      image: rajaniImage,
+    },
+    {
+      id: 4,
+      name: "Vansh Raghav",
+      role: "Ashtanga Vinyasa Yoga Teacher",
+      experience: "6+ years teaching traditional Mysore-style yoga",
+      description:
+        "Guides students through structured Ashtanga sequences with an emphasis on strength, breath coordination, and graceful transitions.",
+      image: vanshImage,
+    },
   ];
 
   return (
@@ -94,13 +115,6 @@ export default function TeamSection() {
             </div>
           ))}
         </div>
-
-        {/* Future Team Member Placeholder (Comment out when not needed) */}
-        {/* <div className="text-center mt-12">
-          <p className="text-[#7a6b63] italic">
-            We're growing our family of healers and guides...
-          </p>
-        </div> */}
 
         {/* Decorative divider */}
         <div className="mt-20 flex justify-center items-center gap-4">

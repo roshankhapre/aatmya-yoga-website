@@ -76,12 +76,7 @@ export default function TeenYogaTraining() {
                   </h3>
                 </div>
                 <div className="space-y-4 text-[#6d5b53] text-base">
-                  <div className="flex items-center gap-3">
-                    <FaCalendarAlt className="text-[#9f7164]" />
-                    <span>
-                      <strong>Dates:</strong> July 28th – Aug 14th
-                    </span>
-                  </div>
+                  <div className="flex items-center gap-3"></div>
                   <div className="flex items-center gap-3">
                     <FaClock className="text-[#9f7164]" />
                     <span>

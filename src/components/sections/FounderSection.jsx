@@ -55,8 +55,8 @@ export default function FounderSection() {
 
               <ul className="text-sm text-[#7a6359] space-y-1 mb-6">
                 <li className="flex items-center gap-2">
-                  <span className="text-[#9f7164]">•</span> E-RYT® 200, RYT 500,
-                  RPYT®, YACEP®
+                  <span className="text-[#9f7164]">•</span> E-RYT® 200, RYT®
+                  500, RCYT®, RPYT®, YACEP®
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#9f7164]">•</span> Yog Prashikshak –

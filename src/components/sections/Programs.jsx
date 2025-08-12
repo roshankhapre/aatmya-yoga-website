@@ -5,6 +5,8 @@ import yogaImg4 from "../../assets/Prenatal Yoga.webp";
 import yogaImg5 from "../../assets/Yoga Therapy.webp";
 import yogaImg6 from "../../assets/Corporate & Group Yoga(online).webp";
 import yogaImg7 from "../../assets/yoga-trainer.webp"; // Added new image
+import yogaImg8 from "../../assets/master_complex_postures_with_a_focus_on.jpeg"; // Added new image
+import yogaImg9 from "../../assets/geriatric_yoga_teacher_training_train_to_teach.jpeg"; // Added new image
 
 const programs = [
   {
@@ -89,6 +91,30 @@ const programs = [
       "Expert mentors",
       "Live + recorded",
       "Teaching practice",
+    ],
+  },
+  {
+    title: "Certificate Course in Advanced Asanas",
+    desc: "Master complex postures with a focus on alignment, endurance, and safety. Designed for intermediate to advanced practitioners.",
+    img: yogaImg8,
+    color: "from-red-100/70 to-red-200/70",
+    features: [
+      "Advanced postures",
+      "Detailed alignment",
+      "Progressive sequencing",
+      "Injury prevention",
+    ],
+  },
+  {
+    title: "Geriatric Yoga Teacher Training",
+    desc: "Train to teach yoga for older adults with emphasis on safety, accessibility, and therapeutic benefits for aging bodies.",
+    img: yogaImg9,
+    color: "from-yellow-100/70 to-yellow-200/70",
+    features: [
+      "Senior-friendly yoga",
+      "Chair yoga techniques",
+      "Therapeutic adaptations",
+      "Age-specific anatomy",
     ],
   },
 ];
