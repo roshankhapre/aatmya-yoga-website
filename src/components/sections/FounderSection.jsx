@@ -12,7 +12,6 @@ export default function FounderSection() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-40 h-40 rounded-full bg-amber-100/10 blur-xl"></div>
         <div className="absolute bottom-1/4 right-20 w-60 h-60 rounded-full bg-teal-100/10 blur-xl"></div>
-        <FaOm className="absolute top-1/3 left-1/4 text-[#e91b1b] text-6xl opacity-20 -rotate-12" />
       </div>
 
       {/* Background decoration */}
