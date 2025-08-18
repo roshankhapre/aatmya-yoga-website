@@ -2,7 +2,7 @@ import mentorImage from "../../assets/dr-shalini-verma-tonk.jpg";
 import kunalImage from "../../assets/kunal-mishra.jpg";
 import rajaniImage from "../../assets/dr-rajani-bala.jpg";
 import vanshImage from "../../assets/vansh-raghav.jpg";
-import roshanImage from "../../assets/roshanimage.png";
+import roshanImage from "../../assets/roshanImage.png";
 
 import { FaLeaf, FaWhatsapp, FaGlobe } from "react-icons/fa";
 
