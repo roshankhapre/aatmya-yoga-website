@@ -2,7 +2,9 @@ import mentorImage from "../../assets/dr-shalini-verma-tonk.jpg";
 import kunalImage from "../../assets/kunal-mishra.jpg";
 import rajaniImage from "../../assets/dr-rajani-bala.jpg";
 import vanshImage from "../../assets/vansh-raghav.jpg";
-import { FaLeaf, FaOm } from "react-icons/fa";
+import roshanImage from "../../assets/roshanimage.png";
+
+import { FaLeaf, FaWhatsapp, FaGlobe } from "react-icons/fa";
 
 export default function TeamSection() {
   const teamMembers = [
@@ -42,6 +44,22 @@ export default function TeamSection() {
         "Guides students through structured Ashtanga sequences with an emphasis on strength, breath coordination, and graceful transitions.",
       image: vanshImage,
     },
+    {
+      id: 5,
+      name: "Roshan Khapre",
+      role: "Freelancer · UI/UX & Fullstack",
+      experience: "Crafting digital experiences with design + code",
+      description:
+        "I blend aesthetics with functionality to create meaningful digital experiences. Specializing in wellness tech, I help brands establish a strong online presence.",
+      specialties: [
+        "Custom Website Development",
+        "Responsive UI/UX Design",
+        "Performance Optimization",
+        "Brand Identity Integration",
+      ],
+      image: roshanImage,
+      isDeveloper: true,
+    },
   ];
 
   return (
@@ -49,13 +67,6 @@ export default function TeamSection() {
       id="team"
       className="py-28 px-6 bg-gradient-to-b from-[#f9f5f0] to-[#e8dfd5] relative overflow-hidden"
     >
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-40 h-40 rounded-full bg-amber-100/10 blur-xl"></div>
-        <div className="absolute bottom-1/4 right-20 w-60 h-60 rounded-full bg-teal-100/10 blur-xl"></div>
-        <FaOm className="absolute top-1/3 left-1/4 text-[#e8d5c8] text-6xl opacity-20 -rotate-12" />
-      </div>
-
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -73,50 +84,91 @@ export default function TeamSection() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-500 transform hover:-translate-y-1 group overflow-hidden border border-white/30"
+              className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-500 transform hover:-translate-y-1 group overflow-hidden border border-[#e8d5c4]/40 relative"
             >
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-100/10 to-teal-100/10 opacity-0 group-hover:opacity-20 transition-opacity duration-700 -z-10 rounded-2xl"></div>
-
               {/* Image */}
-              <div className="relative w-full h-64 mb-6 rounded-xl overflow-hidden shadow-inner border border-[#e8d5c4]/50">
+              <div className="relative w-full h-72 mb-6 rounded-xl overflow-hidden shadow-inner border border-[#e8d5c4]/50">
                 <img
                   src={member.image}
                   alt={`${member.name} - ${member.role}`}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
               </div>
 
               {/* Content */}
               <div>
-                <h3 className="text-2xl font-serif font-light text-[#5a4a42] mb-1 group-hover:text-[#9f7164] transition-colors duration-500">
+                <h3 className="text-2xl font-serif font-light mb-1 text-[#5a4a42] group-hover:text-[#9f7164] transition-colors duration-500">
                   {member.name}
                 </h3>
 
-                <div className="flex items-center gap-2 text-sm uppercase text-[#9f7164] tracking-wider mb-3">
+                <div className="flex items-center gap-2 text-sm uppercase tracking-wider mb-3 text-[#9f7164]">
                   <FaLeaf className="text-xs" />
                   <span>{member.role}</span>
                 </div>
 
-                <p className="text-sm text-[#7a6359] mb-4 leading-relaxed border-b border-[#e8d5c4]/40 pb-4">
+                <p className="text-sm mb-4 leading-relaxed border-b pb-4 text-[#7a6359] border-[#e8d5c4]/40">
                   {member.experience}
                 </p>
 
-                <p className="text-[#6d5b53] text-sm leading-relaxed">
+                <p className="mb-3 text-sm leading-relaxed text-[#6d5b53]">
                   {member.description}
                 </p>
-              </div>
 
-              {/* Decorative corner */}
-              <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-amber-100/30 to-teal-100/30 opacity-20 rounded-bl-2xl"></div>
+                {/* Specialties only for Roshan */}
+                {member.isDeveloper && member.specialties && (
+                  <ul className="grid grid-cols-2 gap-2 mb-4">
+                    {member.specialties.map((item, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start text-xs text-gray-600"
+                      >
+                        <svg
+                          className="w-3 h-3 mt-0.5 mr-1.5 flex-shrink-0 text-amber-500"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {/* CTA Buttons only for Roshan */}
+                {member.isDeveloper && (
+                  <div className="flex gap-3">
+                    <a
+                      href="https://wa.me/917089200175?text=Hi%20Roshan%2C%20I%E2%80%99m%20interested%20in%20designing%20a%20website%20with%20you."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 border border-green-500 text-sm font-medium rounded-full text-green-700 bg-gradient-to-r from-[#9f7164] to-[#7a5a50] hover:from-[#8b6358] hover:to-[#6d4f46] text-white px-10 py-3 rounded-full font-medium tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.03]"
+                    >
+                      <FaWhatsapp className="text-lg" />
+                      WhatsApp
+                    </a>
+                    <a
+                      href="https://www.hiddenleaftechnologies.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 border border-[#9f7164] text-sm font-medium rounded-full text-[#5a4a42] bg-[#f9f5f0] hover:bg-[#f1e6de] transition-colors duration-200"
+                    >
+                      <FaGlobe className="text-sm" />
+                      Visit Website
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Decorative divider */}
+        {/* Divider */}
         <div className="mt-20 flex justify-center items-center gap-4">
           <div className="w-24 h-px bg-[#c8a798] opacity-30"></div>
           <div className="w-3 h-3 border border-[#c8a798] rounded-full opacity-50"></div>

@@ -23,19 +23,19 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/aatmya_yoga/?hl=en"
                 className="text-[#c8b6a8] hover:text-white transition-colors duration-300"
               >
                 <FaInstagram className="text-xl" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/Aatmya.Yoga"
                 className="text-[#c8b6a8] hover:text-white transition-colors duration-300"
               >
                 <FaFacebook className="text-xl" />
               </a>
               <a
-                href="#"
+                href="https://www.youtube.com/@aatmyayoga_steni"
                 className="text-[#c8b6a8] hover:text-white transition-colors duration-300"
               >
                 <FaYoutube className="text-xl" />
