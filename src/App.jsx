@@ -23,6 +23,7 @@ export default function App() {
       <TeenYogaTraining />
       <AboutSection />
       <FounderSection />
+      <Accreditation />
 
       <TeamSection />
       <Programs />
