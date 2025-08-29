@@ -22,10 +22,23 @@ export default function ChildrenYogaTraining95() {
       id="children-ytt"
     >
       {/* 🔥 Highlight Ribbon */}
-      <div className="absolute top-6 md:top-8 left-1/2 -translate-x-1/2 z-10">
-        <span className="bg-[#c8a798] text-white px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold shadow-md">
-          Flagship Course – Most Popular
-        </span>
+      <div className="relative w-full flex justify-center mb-10">
+        <div className="absolute -top-5 sm:-top-6">
+          <span className="relative inline-flex items-center gap-2 px-4 sm:px-6 py-2 rounded-full font-semibold text-xs sm:text-sm md:text-base shadow-lg bg-gradient-to-r from-[#9f7164] to-[#7a5a50] hover:from-[#8b6358] hover:to-[#6d4f46] text-white px-10 py-3 rounded-full font-medium tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.03] animate-pulse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-200"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24h-7.19L12 2 9.19 9.24H2l5.46 
+                 4.73L5.82 21z"
+              />
+            </svg>
+            Flagship Course – Most Popular
+          </span>
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
