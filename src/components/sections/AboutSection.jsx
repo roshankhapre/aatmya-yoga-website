@@ -1,4 +1,5 @@
 import yogaImage from "../../assets/young-woman-doing-yoga-exercises.webp";
+import yogaGuru from "../../assets/yoga-guru.png";
 
 export default function AboutSection() {
   return (
@@ -28,13 +29,13 @@ export default function AboutSection() {
             <img
               src={yogaImage}
               alt="Woman doing yoga peacefully"
-              className="rounded-2xl shadow-lg w-full transform transition-all duration-500 hover:scale-[1.01]"
+              className="rounded-2xl shadow-lg w-full"
             />
           </div>
 
           {/* Right: Text Content */}
           <div className="w-full lg:w-1/2 space-y-7 text-[#5a4a42] text-lg leading-relaxed">
-            <p className="animate-fadeIn">
+            <p>
               <span className="text-[#9f7164] font-medium tracking-wide">
                 AATMYA YOGA
               </span>{" "}
@@ -45,7 +46,7 @@ export default function AboutSection() {
               to all, wherever they may be.
             </p>
 
-            <p className="animate-fadeIn delay-100">
+            <p>
               Our name, <em className="text-[#8b6b5f]">"Aatmya"</em>, comes from
               Sanskrit meaning{" "}
               <strong className="font-normal text-[#7a6359]">
@@ -65,7 +66,7 @@ export default function AboutSection() {
               </p>
             </blockquote>
 
-            <p className="animate-fadeIn delay-200">
+            <p>
               From beginners to advanced practitioners, our{" "}
               <span className="text-[#8b6b5f]">live classes</span>,{" "}
               <span className="text-[#8b6b5f]">on-demand sessions</span>,{" "}
@@ -74,7 +75,7 @@ export default function AboutSection() {
               exactly where you are on your journey.
             </p>
 
-            <p className="animate-fadeIn delay-300">
+            <p>
               At Aatmya Yoga, we celebrate all bodies, all stories, all souls —
               because true yoga{" "}
               <span className="italic text-[#7a6359]">
@@ -83,7 +84,7 @@ export default function AboutSection() {
               .
             </p>
 
-            <p className="animate-fadeIn delay-400">
+            <p>
               We are a community of kindred spirits, walking together toward
               healing and growth — inviting you to experience yoga as{" "}
               <span className="italic text-[#7a6359]">
@@ -92,16 +93,77 @@ export default function AboutSection() {
               .
             </p>
 
-            <p className="font-medium text-[#7a6359] mt-8 animate-fadeIn delay-500">
+            <p className="font-medium text-[#7a6359] mt-8">
               Come home to yourself. The journey begins within.
             </p>
+          </div>
+        </div>
 
-            {/* Decorative element */}
-            <div className="flex justify-center mt-10">
-              <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
-              <div className="w-3 h-3 border-2 border-[#c8a798] rounded-full mx-4 mt-1 opacity-70"></div>
-              <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
+        {/* Guru Tribute Section (Simplified, no animations, no link) */}
+        <div className="mt-28 relative">
+          {/* Section separator */}
+          <div className="flex items-center justify-center mb-16">
+            <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
+            <div className="w-3 h-3 border-2 border-[#c8a798] rounded-full mx-4 opacity-70"></div>
+            <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
+          </div>
+
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-light text-[#5f4b44] mb-4 tracking-wide">
+              With Deep Gratitude
+            </h2>
+            <p className="text-[#8b6b5f] italic max-w-2xl mx-auto">
+              Honoring the teacher who illuminated our path
+            </p>
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16">
+            {/* Guru Image */}
+            <div className="relative w-64 h-64 lg:w-80 lg:h-80">
+              <div className="absolute -inset-4 bg-[#e8d5c8] rounded-full opacity-30 -z-10"></div>
+              <div className="absolute inset-0 border-2 border-[#d8c3b6] rounded-full opacity-40 -z-10"></div>
+              <div className="rounded-full overflow-hidden shadow-lg w-full h-full border-4 border-white">
+                <img
+                  src={yogaGuru}
+                  alt="Guru Ashok Vankineni"
+                  className="w-full h-full object-cover object-top"
+                  style={{ transform: 'scale(1)' }} 
+                />
+              </div>
             </div>
+
+            {/* Guru Bio */}
+            <div className="max-w-md text-center lg:text-left">
+              <div className="mb-2">
+                <h3 className="text-2xl font-serif text-[#5f4b44]">
+                  Guru ASHOK VANKINENI
+                </h3>
+                <p className="text-[#8b6b5f] italic">
+                  Founder, Bodhi School of Yoga
+                </p>
+              </div>
+
+              <div className="relative my-6 py-6 px-6 bg-white bg-opacity-50 rounded-2xl shadow-sm">
+                <div className="absolute top-0 left-0 w-full h-full rounded-2xl border border-[#e8d5c8] opacity-50 -z-10"></div>
+                <span className="absolute text-5xl text-[#e6a88d] opacity-20 top-2 left-4">
+                  "
+                </span>
+                <p className="text-[#6d5b53] italic font-light relative z-10">
+                  The foundation of our practice, the inspiration of our
+                  teaching, the blessing of our school.
+                </p>
+                <span className="absolute text-5xl text-[#e6a88d] opacity-20 bottom-2 right-4">
+                  "
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom separator */}
+          <div className="flex items-center justify-center mt-16">
+            <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
+            <div className="w-3 h-3 border-2 border-[#c8a798] rounded-full mx-4 opacity-70"></div>
+            <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
           </div>
         </div>
       </div>

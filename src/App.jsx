@@ -13,6 +13,7 @@ import TeenYogaTraining from "./components/sections/TeenYogaTraining";
 import FounderSection from "./components/sections/FounderSection";
 import TeamSection from "./components/sections/TeamSection";
 import TeacherTraining from "./components/sections/TeacherTraining";
+import ChildrenYogaTraining95 from "./components/sections/ChildrenYogaTraining95";
 
 export default function App() {
   return (
@@ -20,11 +21,11 @@ export default function App() {
       <Navbar />
       <FloatingContactButtons />
       <Hero />
+      <ChildrenYogaTraining95 />
       <TeenYogaTraining />
       <AboutSection />
       <FounderSection />
       <Accreditation />
-
       <TeamSection />
       <Programs />
       <TeacherTraining />

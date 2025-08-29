@@ -26,15 +26,7 @@ export default function TeamSection() {
         "Specializes in Hatha yoga and advanced anatomy-based alignment, helping students refine postures and avoid injuries with deeper body awareness.",
       image: kunalImage,
     },
-    {
-      id: 3,
-      name: "Dr. Rajani Bala",
-      role: "Yoga Therapist",
-      experience: "3+ years of therapeutic yoga interventions",
-      description:
-        "Blends yogic science with modern medical knowledge to craft personalized programs for lifestyle disorders, anxiety, and hormonal balance.",
-      image: rajaniImage,
-    },
+
     {
       id: 4,
       name: "Vansh Raghav",

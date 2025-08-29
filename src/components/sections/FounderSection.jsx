@@ -89,16 +89,16 @@ export default function FounderSection() {
           </div>
 
           {/* Founder Image */}
-          <div className="w-full lg:w-1/2 relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-white/30">
+          <div className="w-full lg:w-2/5 relative flex justify-center">
+            <div className="relative rounded-2xl overflow-hidden shadow-md border border-white/30 max-w-sm">
               <img
                 src={founderImage}
                 alt="Steni K Thomas, Founder of Aatmya Yoga"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover rounded-2xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent"></div>
             </div>
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#e8d5c8] rounded-full -z-10 opacity-40"></div>
+            <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-[#e8d5c8] rounded-full -z-10 opacity-40"></div>
           </div>
         </div>
 

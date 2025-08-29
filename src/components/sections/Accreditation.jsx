@@ -5,9 +5,21 @@ import rcys from "../../assets/rcys_yoga_-removebg-preview.png";
 
 export default function AccreditationSection() {
   const logos = [
-    { src: yacep, alt: "YACEP Yoga Accreditation" },
-    { src: yoga_alliance, alt: "Yoga Alliance Accreditation" },
-    { src: rcys, alt: "RCYS Yoga Accreditation" },
+    {
+      src: yacep,
+      alt: "YACEP Yoga Accreditation",
+      description: "Yoga Alliance Continuing Education Provider",
+    },
+    {
+      src: yoga_alliance,
+      alt: "Yoga Alliance Accreditation",
+      description: "Internationally Recognized Yoga Standards",
+    },
+    {
+      src: rcys,
+      alt: "RCYS Yoga Accreditation",
+      description: "Yoga Alliance Registered Children’s Yoga School",
+    },
   ];
 
   return (
@@ -55,6 +67,11 @@ export default function AccreditationSection() {
                     className="max-h-20 object-contain mx-auto transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
+
+                {/* Description text */}
+                <p className="relative z-10 text-sm text-[#7a6b63] mt-4 font-medium italic">
+                  {logo.description}
+                </p>
 
                 {/* Hover effect line */}
                 <div className="w-0 h-0.5 bg-gradient-to-r from-amber-200 to-amber-300 mx-auto transition-all duration-500 group-hover:w-24 mt-2"></div>
