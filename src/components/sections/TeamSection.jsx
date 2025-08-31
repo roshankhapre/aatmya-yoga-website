@@ -4,15 +4,7 @@ import rajaniImage from "../../assets/dr-rajani-bala.jpg";
 import vanshImage from "../../assets/vansh-raghav.jpg";
 import roshanImage from "../../assets/roshanImage.png";
 
-import {
-  FaLeaf,
-  FaWhatsapp,
-  FaGlobe,
-  FaEnvelope,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa";
-import { Helmet } from "react-helmet-async";
+import { FaLeaf, FaWhatsapp, FaGlobe } from "react-icons/fa";
 
 export default function TeamSection() {
   const teamMembers = [
@@ -59,136 +51,14 @@ export default function TeamSection() {
       image: roshanImage,
       isDeveloper: true,
       website: "https://www.hiddenleaftechnologies.com/",
-      linkedin: "https://linkedin.com/in/roshan-khapre",
-      github: "https://github.com/roshankhapre",
-      email: "roshan@hiddenleaftechnologies.com",
-      location: "India",
     },
   ];
-
-  // Current page URL for canonical tags
-  const currentUrl = typeof window !== "undefined" ? window.location.href : "";
-
-  // ✅ Improved JSON-LD Schema for SEO
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Aatmya Yoga",
-    url: "https://www.aatmayayoga.com",
-    logo: "https://www.aatmayayoga.com/logo.png",
-    description:
-      "Professional yoga training and teacher certification programs",
-  };
-
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "Aatmya Yoga",
-    url: "https://www.aatmayayoga.com",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://www.aatmayayoga.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
-  };
-
-  // Person schema for Roshan (important for your personal SEO)
-  const roshanSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Roshan Khapre",
-    jobTitle: "UI/UX Designer & Fullstack Developer",
-    url: "https://www.hiddenleaftechnologies.com",
-    image: "https://www.hiddenleaftechnologies.com/images/roshan-image.jpg",
-    sameAs: [
-      "https://www.linkedin.com/in/roshan-khapre",
-      "https://github.com/roshankhapre",
-      "https://wa.me/917089200175",
-    ],
-    knowsAbout: [
-      "Web Development",
-      "UI/UX Design",
-      "React.js",
-      "Node.js",
-      "Wellness Technology",
-      "Yoga Website Development",
-    ],
-    description:
-      "Freelance UI/UX designer and fullstack developer specializing in creating digital experiences for wellness brands and yoga studios.",
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "India",
-    },
-  };
 
   return (
     <section
       id="team"
       className="py-28 px-6 bg-gradient-to-b from-[#f9f5f0] to-[#e8dfd5] relative overflow-hidden"
-      itemScope
-      itemType="https://schema.org/Organization"
     >
-      {/* ✅ Comprehensive SEO Helmet */}
-      <Helmet>
-        <title>
-          Meet Our Yoga Team Experts | Aatmya Yoga Mentors & Trainers
-        </title>
-        <meta
-          name="description"
-          content="Meet the expert team at Aatmya Yoga - Certified yoga instructors, Ayurveda specialists, and wellness mentors. Including Roshan Khapre, UI/UX & Fullstack developer specializing in yoga website development."
-        />
-        <meta
-          name="keywords"
-          content="yoga instructors, yoga teachers, Ayurveda experts, yoga website developer, UI/UX designer for wellness, Roshan Khapre, Hidden Leaf Technologies"
-        />
-
-        {/* Canonical URL */}
-        <link rel="canonical" href={currentUrl} />
-
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={currentUrl} />
-        <meta
-          property="og:title"
-          content="Our Expert Yoga Team - Aatmya Yoga Instructors & Developers"
-        />
-        <meta
-          property="og:description"
-          content="Meet our team of certified yoga instructors, Ayurveda experts, and web developers specializing in wellness websites."
-        />
-        <meta
-          property="og:image"
-          content="https://www.aatmayayoga.com/team-og-image.jpg"
-        />
-
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={currentUrl} />
-        <meta
-          property="twitter:title"
-          content="Our Expert Yoga Team - Aatmya Yoga"
-        />
-        <meta
-          property="twitter:description"
-          content="Certified yoga instructors, Ayurveda specialists, and wellness website developers."
-        />
-        <meta
-          property="twitter:image"
-          content="https://www.aatmayayoga.com/team-twitter-image.jpg"
-        />
-
-        {/* JSON-LD Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify(organizationSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(websiteSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify(roshanSchema)}
-        </script>
-      </Helmet>
-
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -207,9 +77,6 @@ export default function TeamSection() {
             <article
               key={member.id}
               className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-500 transform hover:-translate-y-1 group overflow-hidden border border-[#e8d5c4]/40 relative"
-              itemScope
-              itemType="https://schema.org/Person"
-              itemProp="member"
             >
               {/* Image */}
               <div className="relative w-full h-72 mb-6 rounded-xl overflow-hidden shadow-inner border border-[#e8d5c4]/50">
@@ -217,39 +84,26 @@ export default function TeamSection() {
                   src={member.image}
                   alt={`${member.name} - ${member.role} at Aatmya Yoga`}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
-                  itemProp="image"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
               </div>
 
               {/* Content */}
               <div>
-                <h2
-                  className="text-2xl font-serif font-light mb-1 text-[#5a4a42] group-hover:text-[#9f7164] transition-colors duration-500"
-                  itemProp="name"
-                >
+                <h2 className="text-2xl font-serif font-light mb-1 text-[#5a4a42] group-hover:text-[#9f7164] transition-colors duration-500">
                   {member.name}
                 </h2>
 
-                <div
-                  className="flex items-center gap-2 text-sm uppercase tracking-wider mb-3 text-[#9f7164]"
-                  itemProp="jobTitle"
-                >
+                <div className="flex items-center gap-2 text-sm uppercase tracking-wider mb-3 text-[#9f7164]">
                   <FaLeaf className="text-xs" />
                   <span>{member.role}</span>
                 </div>
 
-                <p
-                  className="text-sm mb-4 leading-relaxed border-b pb-4 text-[#7a6359] border-[#e8d5c4]/40"
-                  itemProp="experience"
-                >
+                <p className="text-sm mb-4 leading-relaxed border-b pb-4 text-[#7a6359] border-[#e8d5c4]/40">
                   {member.experience}
                 </p>
 
-                <p
-                  className="mb-3 text-sm leading-relaxed text-[#6d5b53]"
-                  itemProp="description"
-                >
+                <p className="mb-3 text-sm leading-relaxed text-[#6d5b53]">
                   {member.description}
                 </p>
 
@@ -259,10 +113,7 @@ export default function TeamSection() {
                     <h3 className="text-sm font-semibold mt-4 mb-2 text-[#5a4a42]">
                       Specializations:
                     </h3>
-                    <ul
-                      className="grid grid-cols-2 gap-2 mb-4"
-                      itemProp="knowsAbout"
-                    >
+                    <ul className="grid grid-cols-2 gap-2 mb-4">
                       {member.specialties.map((item, i) => (
                         <li
                           key={i}
@@ -295,7 +146,6 @@ export default function TeamSection() {
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full text-white bg-green-600 hover:bg-green-700 transition-colors duration-200 flex-1 justify-center"
-                        aria-label="Contact Roshan on WhatsApp for website development"
                       >
                         <FaWhatsapp className="text-lg" />
                         WhatsApp
@@ -305,7 +155,6 @@ export default function TeamSection() {
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full text-[#5a4a42] bg-[#f9f5f0] hover:bg-[#f1e6de] transition-colors duration-200 flex-1 justify-center"
-                        aria-label="Visit Roshan's Web Development Portfolio"
                       >
                         <FaGlobe className="text-sm" />
                         Visit Website
