@@ -1,6 +1,5 @@
 // src/components/sections/ChildrenYogaTraining95.jsx
 import { FaCheckCircle } from "react-icons/fa";
-import { Helmet } from "react-helmet-async"; // ✅ add Helmet
 import img1 from "../../assets/medium-shot-people-yoga-mat.webp";
 
 export default function ChildrenYogaTraining95() {
@@ -17,80 +16,11 @@ export default function ChildrenYogaTraining95() {
   const whatsappLink =
     "https://wa.me/918281094117?text=Hello%2C%20I%20am%20interested%20in%20the%2095%20Hours%20Children's%20Yoga%20Teacher%20Training%20Program.";
 
-  // ✅ Structured Data (JSON-LD for Course + FAQ)
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    name: "95 Hours Children’s Yoga Teacher Training",
-    description:
-      "Join Aatmya Yoga’s 95 Hours RCYS-Certified Children’s Yoga Teacher Training in Indore. Specialized training for ages 3-18 with storytelling, mindfulness, child psychology, and lesson planning.",
-    provider: {
-      "@type": "Organization",
-      name: "Aatmya Yoga",
-      url: "https://www.aatmyayoga.com",
-    },
-    educationalCredentialAwarded: "Yoga Alliance RCYS Certification",
-    timeRequired: "P2M", // ISO 8601 → 2 months
-    teaches: [
-      "Children’s Yoga",
-      "Mindfulness for Kids",
-      "Yoga Teaching for Ages 3-18",
-    ],
-    hasCourseInstance: {
-      "@type": "CourseInstance",
-      courseMode: "Blended Online + Live Interactive",
-      duration: "P2M",
-      location: {
-        "@type": "Place",
-        name: "Aatmya Yoga, Indore",
-      },
-    },
-    mainEntity: {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Who can join this course?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "This program is ideal for yoga practitioners, teachers, and parents who want to specialize in teaching yoga to children aged 3–18.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is this course certified?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, the training is Yoga Alliance RCYS Certified, recognized worldwide.",
-          },
-        },
-      ],
-    },
-  };
-
   return (
     <section
       className="relative bg-gradient-to-b from-[#fdfaf7] to-[#f5eee8] py-20 md:py-24"
       id="children-ytt"
     >
-      {/* ✅ Helmet SEO Meta Tags */}
-      <Helmet>
-        <title>
-          95 Hours Children’s Yoga Teacher Training | Aatmya Yoga Indore
-        </title>
-        <meta
-          name="description"
-          content="Aatmya Yoga’s 95 Hours RCYS Certified Children’s Yoga Teacher Training in Indore. Learn child yoga, mindfulness, storytelling, and classroom management with global certification."
-        />
-        <meta
-          name="keywords"
-          content="Children’s Yoga Teacher Training Indore, Kids Yoga TTC India, RCYS Yoga Certification, Online Yoga for Kids"
-        />
-        <link rel="canonical" href="https://www.aatmyayoga.com/children-ytt" />
-        {/* ✅ Structured Data */}
-        <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
-      </Helmet>
-
       {/* 🔥 Highlight Ribbon */}
       <div className="relative w-full flex justify-center mb-10">
         <div className="absolute -top-5 sm:-top-6">
