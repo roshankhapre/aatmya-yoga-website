@@ -108,63 +108,7 @@ export default function AboutSection() {
             <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
           </div>
 
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-light text-[#5f4b44] mb-4 tracking-wide">
-              With Deep Gratitude
-            </h2>
-            <p className="text-[#8b6b5f] italic max-w-2xl mx-auto">
-              Honoring the teacher who illuminated our path
-            </p>
-          </div>
-
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16">
-            {/* Guru Image */}
-            <div className="relative w-64 h-64 lg:w-80 lg:h-80">
-              <div className="absolute -inset-4 bg-[#e8d5c8] rounded-full opacity-30 -z-10"></div>
-              <div className="absolute inset-0 border-2 border-[#d8c3b6] rounded-full opacity-40 -z-10"></div>
-              <div className="rounded-full overflow-hidden shadow-lg w-full h-full border-4 border-white">
-                <img
-                  src={yogaGuru}
-                  alt="Guru Ashok Vankineni"
-                  className="w-full h-full object-cover object-top"
-                  style={{ transform: 'scale(1)' }} 
-                />
-              </div>
-            </div>
-
-            {/* Guru Bio */}
-            <div className="max-w-md text-center lg:text-left">
-              <div className="mb-2">
-                <h3 className="text-2xl font-serif text-[#5f4b44]">
-                  Guru ASHOK VANKINENI
-                </h3>
-                <p className="text-[#8b6b5f] italic">
-                  Founder, Bodhi School of Yoga
-                </p>
-              </div>
-
-              <div className="relative my-6 py-6 px-6 bg-white bg-opacity-50 rounded-2xl shadow-sm">
-                <div className="absolute top-0 left-0 w-full h-full rounded-2xl border border-[#e8d5c8] opacity-50 -z-10"></div>
-                <span className="absolute text-5xl text-[#e6a88d] opacity-20 top-2 left-4">
-                  "
-                </span>
-                <p className="text-[#6d5b53] italic font-light relative z-10">
-                  The foundation of our practice, the inspiration of our
-                  teaching, the blessing of our school.
-                </p>
-                <span className="absolute text-5xl text-[#e6a88d] opacity-20 bottom-2 right-4">
-                  "
-                </span>
-              </div>
-            </div>
-          </div>
-
           {/* Bottom separator */}
-          <div className="flex items-center justify-center mt-16">
-            <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
-            <div className="w-3 h-3 border-2 border-[#c8a798] rounded-full mx-4 opacity-70"></div>
-            <div className="w-20 h-px bg-[#c8a798] opacity-50"></div>
-          </div>
         </div>
       </div>
     </section>
