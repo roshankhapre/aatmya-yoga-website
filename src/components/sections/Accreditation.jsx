@@ -2,6 +2,7 @@ import React from "react";
 import yacep from "../../assets/yacep_yoga-removebg-preview.png";
 import yoga_alliance from "../../assets/yoga_alliance-removebg-preview.png";
 import rcys from "../../assets/rcys_yoga_-removebg-preview.png";
+import IYA from "../../assets/Indian_Yoga_Association.png";
 
 export default function AccreditationSection() {
   const logos = [
@@ -19,6 +20,11 @@ export default function AccreditationSection() {
       src: rcys,
       alt: "RCYS Yoga Accreditation",
       description: "Yoga Alliance Registered Children’s Yoga School",
+    },
+    {
+      src: IYA,
+      alt: "Indian Yoga Association Accreditation",
+      description: "Recognized by Indian Yoga Association",
     },
   ];
 
@@ -43,7 +49,7 @@ export default function AccreditationSection() {
         </div>
 
         {/* Logos */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
           {logos.map((logo, index) => (
             <div key={index} className="relative group">
               {/* Main card */}
@@ -60,11 +66,12 @@ export default function AccreditationSection() {
                 </div>
 
                 {/* Logo container */}
-                <div className="relative z-10 h-40 flex items-center justify-center p-4">
+                {/* Logo container */}
+                <div className="relative z-10 h-48 flex items-center justify-center p-6">
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="max-h-20 object-contain mx-auto transition-transform duration-500 group-hover:scale-110"
+                    className="max-h-32 object-contain mx-auto transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
 
