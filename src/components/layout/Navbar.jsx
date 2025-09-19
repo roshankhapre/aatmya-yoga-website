@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaLeaf } from "react-icons/fa";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,11 +10,24 @@ export default function Navbar() {
   const toggleRef = useRef(null); // 🔁 New ref for the toggle button
 
   const navLinks = [
-    { label: "Programs", href: "#programs" },
-    { label: "Workshops", href: "#workshops" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Programs", href: "/Programs" },
+    { label: "Workshops", href: "/workshops" },
+    { label: "About Us", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ];
+
+  {
+    navLinks.map((link, i) => (
+      <Link
+        key={i}
+        to={link.href}
+        className="relative text-emerald-800/90 hover:text-emerald-700 font-light tracking-wide transition-colors duration-500 group"
+      >
+        {link.label}
+        <span className="absolute bottom-0 left-0 w-0 h-px bg-emerald-600 group-hover:w-full transition-all duration-500"></span>
+      </Link>
+    ));
+  }
 
   // ✅ Improved outside click logic
   useEffect(() => {
@@ -44,13 +58,13 @@ export default function Navbar() {
 
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="flex items-center space-x-3 group">
+        <Link to="/" className="flex items-center space-x-3 group">
           <img
             src={logo}
-            alt="Aatmya Yoga Logo"
+            alt="Aatmya Yoga – Yoga Classes in Indore"
             className="h-14 w-16 shadow-sm"
           />
-        </a>
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-10">
