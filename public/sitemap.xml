@@ -4,71 +4,45 @@
   <!-- Core Pages -->
   <url>
     <loc>https://www.aatmyayoga.com/</loc>
-    <lastmod>2025-07-02</lastmod>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://www.aatmyayoga.com/about</loc>
-    <lastmod>2025-07-02</lastmod>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.aatmyayoga.com/contact</loc>
-    <lastmod>2025-07-02</lastmod>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Program & Training Pages -->
+  <!-- Programs & Trainings -->
   <url>
-    <loc>https://www.aatmyayoga.com/programmes</loc>
-    <lastmod>2025-07-02</lastmod>
+    <loc>https://www.aatmyayoga.com/programs</loc>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://www.aatmyayoga.com/programmes/hatha-yoga</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/programmes/vinyasa-flow</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/programmes/kids-yoga</loc>
-    <lastmod>2025-07-02</lastmod>
+    <loc>https://www.aatmyayoga.com/children-yoga-training</loc>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
   <url>
-    <loc>https://www.aatmyayoga.com/programmes/prenatal-yoga</loc>
-    <lastmod>2025-07-02</lastmod>
+    <loc>https://www.aatmyayoga.com/teen-yoga-training</loc>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
-
   <url>
-    <loc>https://www.aatmyayoga.com/programmes/yoga-therapy</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/programmes/teacher-training</loc>
-    <lastmod>2025-07-02</lastmod>
+    <loc>https://www.aatmyayoga.com/teacher-training</loc>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -76,73 +50,17 @@
   <!-- Workshops -->
   <url>
     <loc>https://www.aatmyayoga.com/workshops</loc>
-    <lastmod>2025-07-02</lastmod>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <url>
-    <loc>https://www.aatmyayoga.com/workshops/196-yoga-sutras</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/workshops/kids-yoga-sequencing</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/workshops/therapy-yoga-sequencing</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/workshops/prenatal-yoga-sequencing</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/workshops/kids-yoga-themes</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/workshops/surya-namaskar-variations</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog Section (Future Ready) -->
+  <!-- Blog (Future Ready) -->
   <url>
     <loc>https://www.aatmyayoga.com/blog</loc>
-    <lastmod>2025-07-02</lastmod>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/blog/benefits-of-prenatal-yoga</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://www.aatmyayoga.com/blog/how-to-structure-kids-yoga-class</loc>
-    <lastmod>2025-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
 
 </urlset>
