@@ -13,6 +13,8 @@ import TeacherTraining from "./components/sections/TeacherTraining";
 import Workshops from "./components/sections/Workshops";
 import Programs from "./components/sections/Programs";
 import FloatingContactButtons from "./components/sections/FloatingContactButtons";
+import NotFound from "./components/sections/NotFound";
+import Testimonials from "./components/sections/Testimonials";
 
 export default function App() {
   return (
@@ -27,6 +29,7 @@ export default function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/workshops" element={<Workshops />} />
           <Route path="/contact" element={<ContactForm />} />
+          <Route path="/testimonials" element={<Testimonials />} />
 
           <Route
             path="/children-yoga-training"
@@ -34,6 +37,7 @@ export default function App() {
           />
           <Route path="/teen-yoga-training" element={<TeenYogaTraining />} />
           <Route path="/teacher-training" element={<TeacherTraining />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

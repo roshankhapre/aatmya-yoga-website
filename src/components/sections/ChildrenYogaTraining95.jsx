@@ -18,11 +18,11 @@ export default function ChildrenYogaTraining95() {
 
   return (
     <section
-      className="relative bg-gradient-to-b from-[#fdfaf7] to-[#f5eee8] py-20 md:py-24"
+      className="relative bg-gradient-to-b from-[#fdfaf7] to-[#f5eee8] py-36 md:py-36"
       id="children-ytt"
     >
       {/* 🔥 Highlight Ribbon */}
-      <div className="relative w-full flex justify-center mb-10">
+      <div className="relative w-full flex justify-center mb-10 ">
         <div className="absolute -top-5 sm:-top-6">
           <span className="relative inline-flex items-center gap-2 px-4 sm:px-6 py-2 rounded-full font-semibold text-xs sm:text-sm md:text-base shadow-lg bg-gradient-to-r from-[#9f7164] to-[#7a5a50] hover:from-[#8b6358] hover:to-[#6d4f46] text-white tracking-wider hover:shadow-xl transition-all duration-300 transform hover:scale-[1.03] animate-pulse">
             ⭐ Flagship Course – Most Popular
