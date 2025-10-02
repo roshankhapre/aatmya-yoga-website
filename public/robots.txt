@@ -1,3 +1,5 @@
+# public/robots.txt - CORRECTED
 User-agent: *
 Allow: /
+
 Sitemap: https://www.aatmyayoga.com/sitemap.xml

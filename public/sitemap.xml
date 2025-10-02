@@ -1,66 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Core Pages -->
   <url>
     <loc>https://www.aatmyayoga.com/</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.aatmyayoga.com/about</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.aatmyayoga.com/contact</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Programs & Trainings -->
   <url>
     <loc>https://www.aatmyayoga.com/programs</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.aatmyayoga.com/children-yoga-training</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.aatmyayoga.com/teen-yoga-training</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.aatmyayoga.com/teacher-training</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Workshops -->
   <url>
     <loc>https://www.aatmyayoga.com/workshops</loc>
-    <lastmod>2025-09-19</lastmod>
+    <lastmod>2025-01-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Blog (Future Ready) -->
   <url>
-    <loc>https://www.aatmyayoga.com/blog</loc>
-    <lastmod>2025-09-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.aatmyayoga.com/testimonials</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
-
 </urlset>
