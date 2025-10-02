@@ -232,6 +232,13 @@ export default function Navbar() {
               About Us
               <span className="absolute bottom-0 left-0 w-0 h-px bg-emerald-600 group-hover:w-full transition-all duration-500"></span>
             </Link>
+            <Link
+              to="/blog"
+              className="relative text-emerald-800/90 hover:text-emerald-700 font-light tracking-wide transition-colors duration-500 group"
+            >
+              Blog
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-emerald-600 group-hover:w-full transition-all duration-500"></span>
+            </Link>
 
             <Link
               to="/contact"
@@ -358,6 +365,7 @@ export default function Navbar() {
             >
               About Our Yoga Studio
             </Link>
+
             <Link
               to="/contact"
               role="menuitem"
