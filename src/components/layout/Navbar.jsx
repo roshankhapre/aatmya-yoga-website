@@ -275,6 +275,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
+        {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div
             id="mobile-menu"
@@ -357,6 +358,7 @@ export default function Navbar() {
             >
               Yoga Workshops
             </Link>
+
             <Link
               to="/about"
               role="menuitem"
@@ -364,6 +366,16 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
             >
               About Our Yoga Studio
+            </Link>
+
+            {/* ✅ Added Blog Link */}
+            <Link
+              to="/blog"
+              role="menuitem"
+              className="block py-3 px-4 text-emerald-800/90 hover:text-emerald-700 text-lg font-light tracking-wide transition-colors duration-300 hover:bg-emerald-50/50 rounded-lg"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Yoga Blog
             </Link>
 
             <Link

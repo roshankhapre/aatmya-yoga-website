@@ -8,9 +8,21 @@ import {
   FaStar,
   FaUsers,
   FaCertificate,
+  FaHeart,
+  FaShieldAlt,
+  FaBookOpen,
+  FaChalkboardTeacher,
+  FaHandHoldingHeart,
+  FaBrain,
+  FaLaptop,
+  FaAward,
+  FaLeaf,
+  FaSeedling,
+  FaUserFriends,
+  FaRegSmileBeam,
 } from "react-icons/fa";
-import { GiMeditation, GiNotebook } from "react-icons/gi";
-import { FaLeaf, FaOm } from "react-icons/fa";
+import { GiMeditation, GiNotebook, GiThreeLeaves } from "react-icons/gi";
+import { MdSelfImprovement, MdPsychology } from "react-icons/md";
 import PageMeta from "../seo/PageMeta";
 
 export default function TeenYogaTraining() {
@@ -19,13 +31,14 @@ export default function TeenYogaTraining() {
   const earlyBirdEnd = new Date("2024-07-10T23:59:59");
   const isEarlyBird = today < earlyBirdEnd;
 
-  // ✅ SEO Schema Markup
+  // Schema definitions (same as before)
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
     name: "Teen Yoga Teacher Training - 14-Day YACEP Certified Online Course",
     description:
       "YACEP certified teen yoga teacher training program. Learn to teach yoga to adolescents with specialized techniques for mental health and mindful movement.",
+    url: "https://www.aatmyayoga.com/teen-yoga-training",
     provider: {
       "@type": "Organization",
       name: "Aatmya Yoga",
@@ -62,7 +75,6 @@ export default function TeenYogaTraining() {
     },
   };
 
-  // ✅ Local Business Schema
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "YogaStudio",
@@ -90,306 +102,494 @@ export default function TeenYogaTraining() {
     },
   };
 
+  const TeenFAQSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How long is the Teen Yoga Teacher Training?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Teen Yoga Teacher Training is a 14-day intensive online program with live interactive sessions on Zoom.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What certification will I receive?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You will receive YACEP (Yoga Alliance Continuing Education Provider) certification upon completion.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is this course suitable for beginners?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Basic yoga knowledge is preferred, but the course is designed for yoga teachers, school teachers, parents, and wellness coaches.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What age group does teen yoga cover?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our teen yoga training focuses on adolescents aged 13-18 years with specialized techniques for this age group.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
-      {/* ✅ SEO Meta Tags */}
       <PageMeta
-        title="Teen Yoga Teacher Training Online | 14-Day YACEP Certified Course | Aatmya Yoga"
-        description="Become a certified teen yoga teacher with our 14-day YACEP certified online training. Learn specialized techniques for adolescent yoga, mental health, and mindful movement. Enroll now."
+        title="Teen Yoga Teacher Training Online from Indore | 14-Day YACEP Certified | Aatmya Yoga"
+        description="Become a certified teen yoga teacher with our 14-day YACEP certified online training from Indore, Madhya Pradesh. Learn adolescent yoga techniques for mental health and mindful movement. India's best teen yoga certification."
         canonical="https://www.aatmyayoga.com/teen-yoga-training"
-        schema={[courseSchema, localBusinessSchema]}
+        schema={[courseSchema, localBusinessSchema, TeenFAQSchema]}
       />
 
-      <section
-        className="py-20 px-4 bg-gradient-to-b from-[#f9f5f0] to-[#e8dfd5] relative overflow-hidden"
-        itemScope
-        itemType="https://schema.org/Course"
-      >
-        {/* Decorative Blurs */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-[15%] left-[10%] w-72 h-72 rounded-full bg-purple-100/10 blur-2xl"></div>
-          <div className="absolute bottom-[10%] right-[10%] w-56 h-56 rounded-full bg-pink-100/10 blur-2xl"></div>
+      <section className="min-h-screen bg-gradient-to-br from-[#fefcf8] via-[#f9f5f0] to-[#f1e8e0] relative overflow-hidden py-10">
+        {/* Background Elements */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-10 left-5 w-72 h-72 bg-purple-100/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/3 right-10 w-96 h-96 bg-amber-100/15 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-1/4 w-64 h-64 bg-green-100/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-3/4 right-1/3 w-80 h-80 bg-blue-100/10 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto relative z-10">
-          {/* 🔥 Early Bird Ribbon */}
-          {isEarlyBird && (
-            <div className="relative w-full flex justify-center mb-6">
-              <div className="absolute -top-4">
-                <span className="relative inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm bg-gradient-to-r from-green-600 to-green-700 text-white tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] animate-pulse">
-                  <FaStar className="text-yellow-300" />
-                  🎉 Early Bird Discount - Save ₹2,000 | Ends July 10th
-                </span>
-              </div>
-            </div>
-          )}
+        <div className="relative z-10">
+          {/* Hero Section */}
+          <div className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              {/* Early Bird Banner */}
+              {isEarlyBird && (
+                <div className="flex justify-center mb-8">
+                  <div className="relative">
+                    <div className="bg-gradient-to-r from-green-600 via-green-500 to-emerald-600 text-white px-8 py-4 rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
+                      <div className="flex items-center gap-3 text-sm sm:text-base font-semibold">
+                        <FaStar className="text-yellow-300 animate-bounce" />
+                        <span>🎉 Early Bird Discount - Save ₹2,000</span>
+                        <span className="hidden sm:inline">
+                          | Ends July 10th
+                        </span>
+                        <FaStar className="text-yellow-300 animate-bounce" />
+                      </div>
+                    </div>
+                    {/* Ribbon ends */}
+                    <div className="absolute -bottom-2 left-4 w-3 h-3 bg-green-700 rotate-45"></div>
+                    <div className="absolute -bottom-2 right-4 w-3 h-3 bg-green-700 rotate-45"></div>
+                  </div>
+                </div>
+              )}
 
-          <div className="bg-white/80 backdrop-blur-md border border-white/30 shadow-xl rounded-[2rem] overflow-hidden">
-            <div className="p-6 sm:p-10 md:p-16">
-              {/* Header with Schema */}
-              <div className="text-center mb-12 relative">
-                <FaOm className="absolute -top-6 left-1/2 -translate-x-1/2 text-purple-200/60 text-5xl -z-10" />
-                <h1
-                  className="text-4xl md:text-5xl font-serif font-light text-[#5a4a42] tracking-wide"
-                  itemProp="name"
-                >
-                  Teen Yoga Teacher Training
+              {/* Main Header */}
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-2 text-[#9f7164] text-sm uppercase tracking-wider font-semibold mb-6">
+                  <GiThreeLeaves className="text-lg" />
+                  <span>YACEP Certified Program</span>
+                  <GiThreeLeaves className="text-lg" />
+                </div>
+
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-light text-[#5a4a42] mb-6 leading-tight">
+                  Teen Yoga Teacher
+                  <br />
+                  <span className="bg-gradient-to-r from-[#9f7164] to-[#7a5a50] bg-clip-text text-transparent">
+                    Training
+                  </span>
                 </h1>
-                <p
-                  className="text-[#7a6b63] italic text-lg mt-2"
-                  itemProp="description"
-                >
-                  YACEP Certified Online Course - Specialized Training for
-                  Adolescent Yoga
+
+                <p className="text-xl sm:text-2xl text-[#7a6b63] max-w-3xl mx-auto leading-relaxed">
+                  Transform young lives through specialized yoga training.
+                  Become a certified teen yoga instructor with our 14-day
+                  intensive program.
                 </p>
-                <div className="w-20 h-[2px] bg-[#c8a798] opacity-50 mx-auto mt-4 mb-2" />
-                <div className="text-sm text-[#7a6b63] uppercase tracking-widest mt-1 flex items-center justify-center gap-2">
-                  <FaCertificate className="text-[#9f7164]" />
-                  14-Day YACEP Certified Online Course
+
+                <div className="flex flex-wrap justify-center gap-4 mt-8">
+                  <div className="flex items-center gap-2 text-[#7a6359] bg-white/80 px-4 py-2 rounded-full border border-[#e8d5c4]">
+                    <FaCertificate className="text-[#9f7164]" />
+                    <span className="text-sm font-medium">YACEP Certified</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-[#7a6359] bg-white/80 px-4 py-2 rounded-full border border-[#e8d5c4]">
+                    <FaClock className="text-[#9f7164]" />
+                    <span className="text-sm font-medium">
+                      14 Days Intensive
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2 text-[#7a6359] bg-white/80 px-4 py-2 rounded-full border border-[#e8d5c4]">
+                    <FaLaptop className="text-[#9f7164]" />
+                    <span className="text-sm font-medium">Live Online</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Grid */}
-              <div className="grid md:grid-cols-2 gap-10 mb-12">
-                {/* What You'll Learn */}
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3 text-[#5a4a42]">
-                    <GiNotebook className="text-[#9f7164] text-xl" />
-                    <h2 className="text-2xl font-serif font-light">
-                      What You'll Learn in Teen Yoga Training
-                    </h2>
-                  </div>
-                  <ul className="space-y-4 text-[#6d5b53]">
-                    {[
-                      "Understanding teen development & psychology through yoga",
-                      "Creating safe, engaging yoga classes for adolescents (13-18 years)",
-                      "Supporting mental health & emotional wellness through mindful movement",
-                      "Building confidence & self-esteem in young practitioners",
-                      "Age-appropriate asanas, pranayama & meditation techniques",
-                      "Classroom management strategies for teen yoga sessions",
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <FaCheckCircle className="text-[#9f7164] mt-1 flex-shrink-0" />
-                        <span className="leading-relaxed">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              {/* Main Content Card */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
+                <div className="p-6 sm:p-8 lg:p-12">
+                  {/* Features Grid */}
+                  <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+                    {/* What You'll Learn */}
+                    <div className="space-y-6">
+                      <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 bg-gradient-to-br from-[#9f7164] to-[#7a5a50] rounded-2xl flex items-center justify-center">
+                          <GiNotebook className="text-white text-xl" />
+                        </div>
+                        <h2 className="text-2xl sm:text-3xl font-serif font-light text-[#5a4a42]">
+                          What You'll Master
+                        </h2>
+                      </div>
 
-                {/* Program Details */}
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3 text-[#5a4a42]">
-                    <FaGraduationCap className="text-[#9f7164] text-xl" />
-                    <h2 className="text-2xl font-serif font-light">
-                      Program Details
-                    </h2>
-                  </div>
-                  <div className="space-y-4 text-[#6d5b53] text-base">
-                    <div className="flex items-center gap-3">
-                      <FaClock className="text-[#9f7164] flex-shrink-0" />
-                      <span itemProp="timeToComplete">
-                        <strong>Duration:</strong> 14 Days Intensive Training
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <FaMapMarkerAlt className="text-[#9f7164] flex-shrink-0" />
-                      <span>
-                        <strong>Location:</strong> Live Interactive Sessions on
-                        Zoom
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <FaUsers className="text-[#9f7164] flex-shrink-0" />
-                      <span>
-                        <strong>Batch Size:</strong> Limited to 15 Students
-                      </span>
+                      <div className="space-y-4">
+                        {[
+                          {
+                            icon: MdPsychology,
+                            text: "Teen psychology & developmental stages",
+                          },
+                          {
+                            icon: FaHandHoldingHeart,
+                            text: "Emotional wellness & mindfulness techniques",
+                          },
+                          {
+                            icon: FaBrain,
+                            text: "Mental health support through yoga",
+                          },
+                          {
+                            icon: FaRegSmileBeam,
+                            text: "Building confidence & self-esteem",
+                          },
+                          {
+                            icon: GiMeditation,
+                            text: "Age-appropriate asanas & pranayama",
+                          },
+                          {
+                            icon: FaChalkboardTeacher,
+                            text: "Classroom management for teens",
+                          },
+                        ].map((item, index) => (
+                          <div
+                            key={index}
+                            className="flex items-start gap-4 p-3 rounded-xl hover:bg-[#f9f5f0] transition-colors duration-200"
+                          >
+                            <item.icon className="text-[#9f7164] text-lg mt-0.5 flex-shrink-0" />
+                            <span className="text-[#6d5b53] leading-relaxed">
+                              {item.text}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
 
-                    {/* FEES with Schema */}
-                    <div
-                      className="relative mt-4"
-                      itemScope
-                      itemType="https://schema.org/Offer"
-                    >
-                      <div className="p-4 rounded-xl bg-[#fef7f4] border border-[#e0cfc6] shadow-sm">
-                        <div className="flex items-center gap-3">
-                          <FaRupeeSign className="text-[#9f7164] flex-shrink-0" />
-                          <span className="text-lg text-[#5a4a42] font-medium">
-                            <strong>Course Fees:</strong>{" "}
+                    {/* Program Details */}
+                    <div className="space-y-6">
+                      <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 bg-gradient-to-br from-[#9f7164] to-[#7a5a50] rounded-2xl flex items-center justify-center">
+                          <FaGraduationCap className="text-white text-xl" />
+                        </div>
+                        <h2 className="text-2xl sm:text-3xl font-serif font-light text-[#5a4a42]">
+                          Program Details
+                        </h2>
+                      </div>
+
+                      <div className="space-y-4">
+                        <div className="bg-gradient-to-br from-[#f9f5f0] to-[#e8d5c4] rounded-2xl p-6 border border-[#e8d5c4]">
+                          <div className="grid sm:grid-cols-2 gap-4 text-[#6d5b53]">
+                            <div className="flex items-center gap-3">
+                              <FaClock className="text-[#9f7164] text-lg" />
+                              <div>
+                                <div className="font-semibold text-[#5a4a42]">
+                                  Duration
+                                </div>
+                                <div className="text-sm">14 Days Intensive</div>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-3">
+                              <FaLaptop className="text-[#9f7164] text-lg" />
+                              <div>
+                                <div className="font-semibold text-[#5a4a42]">
+                                  Format
+                                </div>
+                                <div className="text-sm">Live Online</div>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-3">
+                              <FaUsers className="text-[#9f7164] text-lg" />
+                              <div>
+                                <div className="font-semibold text-[#5a4a42]">
+                                  Batch Size
+                                </div>
+                                <div className="text-sm">Limited to 15</div>
+                              </div>
+                            </div>
+                            <div className="flex items-center gap-3">
+                              <FaAward className="text-[#9f7164] text-lg" />
+                              <div>
+                                <div className="font-semibold text-[#5a4a42]">
+                                  Certification
+                                </div>
+                                <div className="text-sm">YACEP</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Pricing Card */}
+                        <div className="bg-gradient-to-br from-[#fef7f4] to-[#f9e9e1] rounded-2xl p-6 border-2 border-[#e8d5c4] shadow-lg">
+                          <div className="text-center mb-4">
+                            <div className="flex items-center justify-center gap-2 text-[#5a4a42] mb-2">
+                              <FaRupeeSign className="text-[#9f7164]" />
+                              <span className="font-semibold text-lg">
+                                Course Investment
+                              </span>
+                            </div>
+
                             {isEarlyBird ? (
-                              <>
-                                <span
-                                  className="text-green-700 font-bold text-xl"
-                                  itemProp="price"
-                                >
-                                  8,000
-                                </span>{" "}
-                                <span className="line-through text-sm text-[#a79b91] ml-2">
-                                  ₹10,000
-                                </span>
-                                <span className="text-xs text-green-600 block mt-1">
-                                  🎉 Early Bird Discount - Save 20% | Ends July
-                                  10
-                                </span>
-                              </>
+                              <div className="space-y-2">
+                                <div className="flex items-center justify-center gap-3">
+                                  <span className="text-3xl font-bold text-green-700">
+                                    ₹8,000
+                                  </span>
+                                  <span className="text-lg text-[#a79b91] line-through">
+                                    ₹10,000
+                                  </span>
+                                </div>
+                                <div className="text-sm text-green-600 font-medium bg-green-50 px-3 py-1 rounded-full inline-block">
+                                  🎉 You Save ₹2,000 (20% Off)
+                                </div>
+                                <div className="text-xs text-[#9f8e84] mt-2">
+                                  Early bird ends July 10, 2024
+                                </div>
+                              </div>
                             ) : (
-                              <>
-                                <span
-                                  className="text-[#5a4a42] font-bold text-xl"
-                                  itemProp="price"
-                                >
-                                  10,000
-                                </span>
-                              </>
+                              <div className="text-3xl font-bold text-[#5a4a42]">
+                                ₹10,000
+                              </div>
                             )}
-                            <meta itemProp="priceCurrency" content="INR" />
-                            <meta
-                              itemProp="availability"
-                              content="https://schema.org/InStock"
-                            />
-                          </span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
+                  {/* Program Highlights */}
+                  <div className="bg-gradient-to-br from-[#f8f2eb] to-[#f1e8e0] rounded-2xl p-6 sm:p-8 border border-[#e8dcd3] mb-10">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-10 h-10 bg-gradient-to-br from-[#9f7164] to-[#7a5a50] rounded-xl flex items-center justify-center">
+                        <FaStar className="text-white text-lg" />
+                      </div>
+                      <h2 className="text-2xl font-serif font-light text-[#5a4a42]">
+                        Why Choose Our Training?
+                      </h2>
+                    </div>
+
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {[
+                        {
+                          icon: FaChalkboardTeacher,
+                          title: "Expert Instructors",
+                          desc: "Learn from certified teen yoga specialists",
+                        },
+                        {
+                          icon: FaBookOpen,
+                          title: "Comprehensive Curriculum",
+                          desc: "Teen psychology + teaching methodology",
+                        },
+                        {
+                          icon: FaCertificate,
+                          title: "YACEP Certified",
+                          desc: "Globally recognized certification",
+                        },
+                        {
+                          icon: FaUserFriends,
+                          title: "Small Batch Size",
+                          desc: "Personalized attention & mentorship",
+                        },
+
+                        {
+                          icon: FaHeart,
+                          title: "Community Support",
+                          desc: "Join our alumni network",
+                        },
+                      ].map((feature, index) => (
+                        <div
+                          key={index}
+                          className="bg-white/80 rounded-xl p-4 border border-[#e8d5c4] hover:border-[#9f7164] transition-all duration-300 group"
+                        >
+                          <feature.icon className="text-2xl text-[#9f7164] mb-3 group-hover:scale-110 transition-transform duration-300" />
+                          <h3 className="font-semibold text-[#5a4a42] mb-2">
+                            {feature.title}
+                          </h3>
+                          <p className="text-sm text-[#6d5b53] leading-relaxed">
+                            {feature.desc}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Career Opportunities */}
+                  <div className="bg-gradient-to-br from-[#f0f7f0] to-[#e8f5e8] rounded-2xl p-6 border border-[#d4e8d4] mb-8">
+                    <h3 className="text-xl font-semibold text-[#5a4a42] mb-4 flex items-center gap-3">
+                      <FaGraduationCap className="text-[#9f7164]" />
+                      Your Career After Certification
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-3">
+                        {[
+                          "Teen Yoga Teacher in Schools & Colleges",
+                          "Private Yoga Instructor for Adolescents",
+                          "Wellness Coach in Educational Institutions",
+                        ].map((item, index) => (
+                          <div key={index} className="flex items-center gap-3">
+                            <FaLeaf className="text-green-600 flex-shrink-0" />
+                            <span className="text-[#6d5b53] text-sm">
+                              {item}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="space-y-3">
+                        {[
+                          "Online Teen Yoga Classes",
+                          "Yoga Therapist for Teen Mental Health",
+                          "Workshop Facilitator for Youth Groups",
+                        ].map((item, index) => (
+                          <div key={index} className="flex items-center gap-3">
+                            <FaSeedling className="text-green-600 flex-shrink-0" />
+                            <span className="text-[#6d5b53] text-sm">
+                              {item}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* CTA Section */}
+                  <div className="text-center">
+                    <div className="bg-gradient-to-br from-[#f9f5f0] to-[#e8d5c4] rounded-2xl p-8 border border-[#e8d5c4] mb-6">
+                      <p className="text-lg sm:text-xl text-[#7a5a50] italic font-serif mb-6 leading-relaxed">
+                        "Empower the next generation with yoga. Transform teen
+                        lives through mindful movement and emotional wellness."
+                      </p>
+
+                      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                        <a
+                          href="https://wa.me/918281094117?text=Hi%2C%20I'm%20interested%20in%20the%20Teen%20Yoga%20Teacher%20Training%20course%20and%20would%20like%20to%20know%20more%20details%20about%20the%20YACEP%20certification%2C%20curriculum%2C%20and%20batch%20timings.%20Thank%20you%20%F0%9F%99%8F"
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          className="inline-flex items-center gap-3 bg-gradient-to-r from-[#9f7164] to-[#7a5a50] hover:from-[#8b6358] hover:to-[#6d4f46] text-white px-8 py-4 rounded-2xl font-semibold tracking-wide shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-lg min-w-[200px] justify-center"
+                        >
+                          <span>📱 Enroll Now</span>
+                        </a>
+
+                        <a
+                          href="tel:+918281094117"
+                          className="inline-flex items-center gap-3 border-2 border-[#9f7164] text-[#7a5a50] hover:bg-[#9f7164] hover:text-white px-6 py-4 rounded-2xl font-medium tracking-wide transition-all duration-300 min-w-[180px] justify-center"
+                        >
+                          <span>📞 Call Now</span>
+                        </a>
+                      </div>
+
+                      <p className="text-sm text-[#7a6b63] mt-6 flex items-center justify-center gap-2 flex-wrap">
+                        <FaUsers className="text-[#9f7164]" />
+                        <span>
+                          Only 15 seats per batch • Personalized mentorship •
+                          YACEP Certified
+                        </span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Program Highlights */}
-              <div className="bg-[#f8f2eb] p-6 sm:p-8 rounded-xl border border-[#e8dcd3] mb-10 shadow-sm">
-                <div className="flex items-center gap-3 text-[#5a4a42] mb-5">
-                  <FaStar className="text-[#9f7164] text-xl" />
-                  <h2 className="text-2xl font-serif font-light">
-                    Teen Yoga Training Program Highlights
-                  </h2>
+              {/* FAQ Section */}
+              <div className="mt-12 bg-white/90 backdrop-blur-sm rounded-3xl p-8 border border-white/50 shadow-xl">
+                <h2 className="text-3xl font-serif text-center text-[#5a4a42] mb-12">
+                  Frequently Asked Questions
+                </h2>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="space-y-6">
+                    {[
+                      {
+                        question: "How long is the Teen Yoga Teacher Training?",
+                        answer:
+                          "The Teen Yoga Teacher Training is a 14-day intensive online program with live interactive sessions on Zoom, designed for comprehensive learning.",
+                      },
+                      {
+                        question: "What certification will I receive?",
+                        answer:
+                          "You will receive YACEP (Yoga Alliance Continuing Education Provider) certification upon completion, recognized internationally.",
+                      },
+                    ].map((faq, index) => (
+                      <div
+                        key={index}
+                        className="bg-[#f9f5f0] rounded-2xl p-6 border border-[#e8d5c4]"
+                      >
+                        <h3 className="text-lg font-semibold text-[#5a4a42] mb-3 flex items-center gap-2">
+                          <FaCheckCircle className="text-[#9f7164] text-sm" />
+                          {faq.question}
+                        </h3>
+                        <p className="text-[#6d5b53] text-sm leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="space-y-6">
+                    {[
+                      {
+                        question: "Is this course suitable for beginners?",
+                        answer:
+                          "Basic yoga knowledge is preferred, but the course is designed for yoga teachers, school teachers, parents, and wellness coaches at various experience levels.",
+                      },
+                      {
+                        question: "What age group does teen yoga cover?",
+                        answer:
+                          "Our teen yoga training focuses on adolescents aged 13-18 years with specialized techniques and methodologies tailored for this specific age group.",
+                      },
+                    ].map((faq, index) => (
+                      <div
+                        key={index}
+                        className="bg-[#f9f5f0] rounded-2xl p-6 border border-[#e8d5c4]"
+                      >
+                        <h3 className="text-lg font-semibold text-[#5a4a42] mb-3 flex items-center gap-2">
+                          <FaCheckCircle className="text-[#9f7164] text-sm" />
+                          {faq.question}
+                        </h3>
+                        <p className="text-[#6d5b53] text-sm leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-                <ul className="grid sm:grid-cols-1 md:grid-cols-2 gap-5 text-[#6d5b53] text-[15px]">
-                  <li className="flex items-start gap-3">
-                    <GiNotebook className="text-[#9f7164] mt-1 flex-shrink-0" />
-                    <strong>Expert-Led Training:</strong> Learn from certified
-                    yoga instructors with teen specialization
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <GiMeditation className="text-[#9f7164] mt-1 flex-shrink-0" />
-                    <strong>Teen Psychology:</strong> Understand adolescent
-                    development & classroom dynamics
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <FaGraduationCap className="text-[#9f7164] mt-1 flex-shrink-0" />
-                    <strong>YACEP Certification:</strong> Internationally
-                    recognized credential to start teaching immediately
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <FaUsers className="text-[#9f7164] mt-1 flex-shrink-0" />
-                    <strong>Practical Teaching:</strong> Hands-on experience
-                    with live demonstration classes
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <FaCertificate className="text-[#9f7164] mt-1 flex-shrink-0" />
-                    <strong>Lifetime Access:</strong> Course materials and
-                    updates accessible forever
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <FaLeaf className="text-[#9f7164] mt-1 flex-shrink-0" />
-                    <strong>Mindfulness Tools:</strong> Techniques for stress
-                    management and emotional regulation
-                  </li>
-                </ul>
               </div>
 
-              {/* Career Opportunities */}
-              <div className="bg-[#f0f7f0] p-6 rounded-xl border border-[#d4e8d4] mb-8">
-                <h3 className="text-xl font-semibold text-[#5a4a42] mb-4 flex items-center gap-2">
-                  <FaGraduationCap className="text-[#9f7164]" />
-                  Career Opportunities After Certification
-                </h3>
-                <div className="grid md:grid-cols-2 gap-4 text-[#6d5b53] text-sm">
-                  <ul className="space-y-2">
-                    <li>• Teen Yoga Teacher in Schools & Colleges</li>
-                    <li>• Private Yoga Instructor for Adolescents</li>
-                    <li>• Wellness Coach in Educational Institutions</li>
-                  </ul>
-                  <ul className="space-y-2">
-                    <li>• Online Teen Yoga Classes</li>
-                    <li>• Yoga Therapist for Teen Mental Health</li>
-                    <li>• Workshop Facilitator for Youth Groups</li>
-                  </ul>
+              {/* Bottom Navigation */}
+              <div className="mt-12 text-center">
+                <p className="text-[#6d5b53] mb-6 text-lg">
+                  Explore More Yoga Programs
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  {[
+                    {
+                      name: "Yoga Teacher Training",
+                      href: "/teacher-training",
+                    },
+                    { name: "Kids Yoga Training", href: "/kids-yoga-training" },
+                    { name: "Workshops", href: "/workshops" },
+                    { name: "Blog", href: "/blog" },
+                  ].map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.href}
+                      className="text-[#9f7164] hover:text-[#7a5a50] underline hover:no-underline transition-all duration-300 font-medium"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
                 </div>
-              </div>
-
-              {/* CTA Section */}
-              <div className="text-center mt-6">
-                <p className="text-lg text-[#7a5a50] italic font-serif mb-4">
-                  "Empowering teens through yoga creates lifelong healthy habits
-                  and emotional resilience."
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
-                  <a
-                    href="https://wa.me/918281094117?text=Hi%2C%20I'm%20interested%20in%20the%20Teen%20Yoga%20Teacher%20Training%20course%20and%20would%20like%20to%20know%20more%20details%20about%20the%20YACEP%20certification%2C%20curriculum%2C%20and%20batch%20timings.%20Thank%20you%20%F0%9F%99%8F"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="inline-block bg-gradient-to-r from-[#9f7164] to-[#7a5a50] hover:from-[#8b6358] hover:to-[#6d4f46] text-white px-8 py-4 rounded-full font-semibold tracking-wider shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.03] text-lg"
-                    aria-label="Enroll in Teen Yoga Teacher Training via WhatsApp - +91 82810 94117"
-                  >
-                    📞 Enroll Now on WhatsApp
-                  </a>
-
-                  <a
-                    href="tel:+918281094117"
-                    className="inline-block border-2 border-[#9f7164] text-[#7a5a50] hover:bg-[#9f7164] hover:text-white px-6 py-4 rounded-full font-medium tracking-wider transition-all duration-300"
-                    aria-label="Call Aatmya Yoga for Teen Yoga Training - +91 82810 94117"
-                  >
-                    📱 Call: +91 82810 94117
-                  </a>
-                </div>
-
-                <p className="text-sm text-[#7a6b63] mt-4 italic flex items-center justify-center gap-2">
-                  <FaUsers className="text-[#9f7164]" />
-                  Only 15 seats available • Personalized Guidance • YACEP
-                  Certified
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Additional SEO Content */}
-          <div className="mt-12 bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-white/30 shadow-lg">
-            <h2 className="text-3xl font-serif text-center text-[#5a4a42] mb-8">
-              Why Choose Our Teen Yoga Teacher Training?
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8 text-[#6d5b53]">
-              <div>
-                <h3 className="text-xl font-semibold text-[#5a4a42] mb-4">
-                  Comprehensive Curriculum
-                </h3>
-                <p className="mb-3">
-                  Our 14-day intensive program covers everything from teen
-                  psychology to practical teaching methodologies. Learn to
-                  create engaging, age-appropriate yoga sessions that resonate
-                  with adolescents.
-                </p>
-                <p>
-                  Gain expertise in handling classroom dynamics, building
-                  rapport with teens, and addressing common challenges in
-                  adolescent yoga instruction.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-[#5a4a42] mb-4">
-                  YACEP Certification Benefits
-                </h3>
-                <p className="mb-3">
-                  Yoga Alliance Continuing Education Provider (YACEP)
-                  certification ensures your credentials are recognized
-                  globally. This certification enhances your professional
-                  credibility and opens doors to teaching opportunities
-                  worldwide.
-                </p>
-                <p>
-                  Join our alumni network of certified teen yoga teachers making
-                  a difference in young lives across India and beyond.
-                </p>
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function ChildrenYogaTraining95() {
   const whatsappLink =
     "https://wa.me/918281094117?text=Hello%2C%20I%20am%20interested%20in%20the%2095%20Hours%20Children's%20Yoga%20Teacher%20Training%20Program%20in%20Indore.";
 
-  // ✅ Course Schema Markup
+  // ✅ Course Schema
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
@@ -88,7 +88,7 @@ export default function ChildrenYogaTraining95() {
     name: "Aatmya Yoga - Children's Yoga Teacher Training in Indore",
     description:
       "Leading yoga studio in Indore offering RCYS certified children's yoga teacher training programs. Specialized in yoga for kids, teens, and teacher certification.",
-    url: "https://yourwebsite.com/children-yoga-training",
+    url: "https://www.aatmyayoga.com/children-yoga-training",
     telephone: "+91-82810-94117",
     email: "yogasteni@gmail.com",
     address: {
@@ -118,16 +118,57 @@ export default function ChildrenYogaTraining95() {
     },
   };
 
+  // ✅ FAQ Schema
+  const FAQSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is the duration of the Children's Yoga Teacher Training?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The 95-hour Children's Yoga Teacher Training runs for 8 weeks with flexible online and in-person options in Indore.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Is this Yoga Alliance certified?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, this is Yoga Alliance RCYS (Registered Children's Yoga School) certified, recognized globally.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who can join this children's yoga training?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yoga teachers, school teachers, parents, childcare professionals, and anyone passionate about children's wellness in Indore can join.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What age groups does this training cover?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Our training covers teaching yoga to children from ages 3 to 18 years with age-appropriate methodologies.",
+        },
+      },
+    ],
+  };
+
   return (
     <>
+      {/* ✅ SEO Meta with Schema */}
       <PageMeta
         title="Children's Yoga Teacher Training in Indore | 95 Hours RCYS Certified | Aatmya Yoga"
         description="Yoga Alliance RCYS certified 95-hour Children's Yoga Teacher Training in Indore. Learn specialized techniques for teaching yoga to children ages 3-18. Enroll now."
         canonical="https://www.aatmyayoga.com/children-yoga-training"
-        schema={courseSchema}
+        schema={[courseSchema, localBusinessSchema, FAQSchema]}
       />
 
-      {/* Your existing component content */}
+      {/* ✅ Main Section */}
       <section className="relative bg-gradient-to-b from-[#fdfaf7] to-[#f5eee8] py-36 md:py-36">
         {/* 🔥 Highlight Ribbon */}
         <div className="relative w-full flex justify-center mb-10">
@@ -140,7 +181,7 @@ export default function ChildrenYogaTraining95() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
-          {/* Heading with Schema */}
+          {/* ✅ Heading */}
           <div className="text-center mb-12 md:mb-16">
             <h1
               className="text-3xl sm:text-4xl md:text-5xl font-serif font-light text-[#5a4a42] mb-4 md:mb-6 leading-snug"
@@ -160,10 +201,10 @@ export default function ChildrenYogaTraining95() {
             <div className="w-20 md:w-24 h-[2px] bg-[#c8a798] opacity-50 mx-auto mt-5 md:mt-6"></div>
           </div>
 
-          {/* Course Card */}
+          {/* ✅ Course Card */}
           <div className="relative bg-white border border-[#e6ded7] shadow-xl rounded-3xl p-6 sm:p-10 lg:p-14 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-              {/* Left Side - Course Details */}
+              {/* Left – Course Info */}
               <div
                 itemScope
                 itemType="https://schema.org/EducationalOccupationalCredential"
@@ -184,7 +225,7 @@ export default function ChildrenYogaTraining95() {
                   ))}
                 </ul>
 
-                {/* Info Boxes with Schema */}
+                {/* ✅ Info Boxes */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 md:mb-10">
                   <div
                     className="bg-[#f9f5f0] border border-[#e6ded7] p-4 sm:p-5 rounded-xl text-center shadow-sm hover:shadow-md transition"
@@ -222,7 +263,7 @@ export default function ChildrenYogaTraining95() {
                   </div>
                 </div>
 
-                {/* Target Audience */}
+                {/* ✅ Audience */}
                 <div className="bg-[#f0f7f0] border border-[#d4e8d4] p-4 rounded-xl mb-6">
                   <h3 className="font-semibold text-[#5a4a42] mb-2 flex items-center">
                     <FaUsers className="text-[#c8a798] mr-2" />
@@ -235,7 +276,7 @@ export default function ChildrenYogaTraining95() {
                   </p>
                 </div>
 
-                {/* CTA */}
+                {/* ✅ CTA */}
                 <div className="text-center sm:text-left">
                   <a
                     href={whatsappLink}
@@ -252,7 +293,7 @@ export default function ChildrenYogaTraining95() {
                 </div>
               </div>
 
-              {/* Right Side – Image with Schema */}
+              {/* ✅ Right – Course Image */}
               <div className="flex justify-center lg:justify-end">
                 <div
                   itemProp="image"
@@ -276,7 +317,7 @@ export default function ChildrenYogaTraining95() {
               </div>
             </div>
 
-            {/* Additional SEO Content */}
+            {/* ✅ Extra SEO Content */}
             <div className="mt-12 pt-8 border-t border-[#e6ded7]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-[#6a5c55]">
                 <div>

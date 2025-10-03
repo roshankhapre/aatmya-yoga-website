@@ -1,3 +1,4 @@
+// src/components/sections/Home.jsx - CORRECTED VERSION
 import AboutSection from "./AboutSection";
 import AccreditationSection from "./Accreditation";
 import ChildrenYogaTraining95 from "./ChildrenYogaTraining95";
@@ -14,12 +15,12 @@ import Workshops from "./Workshops";
 import PageMeta from "../seo/PageMeta";
 
 export default function Home() {
+  // ✅ Only add page-specific schema, DON'T override title/description
   const homeSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Aatmya Yoga - Yoga Classes & Teacher Training in Indore",
-    description:
-      "Professional yoga studio in Indore offering children yoga, teen yoga, teacher training, and workshops. Yoga Alliance certified programs.",
+    name: "Aatmya Yoga - Home",
+    description: "Yoga classes and teacher training in Indore, India",
     url: "https://www.aatmyayoga.com/",
     mainEntity: {
       "@type": "YogaStudio",
@@ -30,12 +31,8 @@ export default function Home() {
 
   return (
     <>
-      <PageMeta
-        title="Aatmya Yoga | Yoga Classes & Teacher Training in Indore | Yoga Alliance Certified"
-        description="Join Aatmya Yoga in Indore for professional yoga classes, children yoga programs, teen yoga, and Yoga Alliance certified teacher training. Transform your life with yoga."
-        canonical="https://www.aatmyayoga.com/"
-        schema={homeSchema}
-      />
+      {/* ✅ ONLY schema, NO title/description override for home page */}
+      <PageMeta schema={homeSchema} canonical="https://www.aatmyayoga.com/" />
 
       {/* Your existing home content */}
       <Hero />
