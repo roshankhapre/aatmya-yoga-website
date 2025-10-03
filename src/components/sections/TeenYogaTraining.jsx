@@ -478,16 +478,16 @@ export default function TeenYogaTraining() {
                           href="https://wa.me/918281094117?text=Hi%2C%20I'm%20interested%20in%20the%20Teen%20Yoga%20Teacher%20Training%20course%20and%20would%20like%20to%20know%20more%20details%20about%20the%20YACEP%20certification%2C%20curriculum%2C%20and%20batch%20timings.%20Thank%20you%20%F0%9F%99%8F"
                           target="_blank"
                           rel="noopener noreferrer nofollow"
-                          className="inline-flex items-center gap-3 bg-gradient-to-r from-[#9f7164] to-[#7a5a50] hover:from-[#8b6358] hover:to-[#6d4f46] text-white px-8 py-4 rounded-2xl font-semibold tracking-wide shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-lg min-w-[200px] justify-center"
+                          className="inline-flex items-center gap-3 bg-gradient-to-r from-[#9f7164] to-[#7a5a50] hover:from-[#8b6358] hover:to-[#6d4f46] text-white px-8 py-4 rounded-full font-semibold tracking-wide shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 text-lg min-w-[200px] justify-center"
                         >
-                          <span>📱 Enroll Now</span>
+                          <span> Enroll Now</span>
                         </a>
 
                         <a
                           href="tel:+918281094117"
-                          className="inline-flex items-center gap-3 border-2 border-[#9f7164] text-[#7a5a50] hover:bg-[#9f7164] hover:text-white px-6 py-4 rounded-2xl font-medium tracking-wide transition-all duration-300 min-w-[180px] justify-center"
+                          className="inline-flex items-center gap-3 border-2 border-[#9f7164] text-[#7a5a50] hover:bg-[#9f7164] hover:text-white px-6 py-4 rounded-full font-medium tracking-wide transition-all duration-300 min-w-[180px] justify-center"
                         >
-                          <span>📞 Call Now</span>
+                          <span> Call Now</span>
                         </a>
                       </div>
 
