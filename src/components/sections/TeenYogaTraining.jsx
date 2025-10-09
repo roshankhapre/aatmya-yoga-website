@@ -102,44 +102,7 @@ export default function TeenYogaTraining() {
     },
   };
 
-  const TeenFAQSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "How long is the Teen Yoga Teacher Training?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "The Teen Yoga Teacher Training is a 14-day intensive online program with live interactive sessions on Zoom.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What certification will I receive?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "You will receive YACEP (Yoga Alliance Continuing Education Provider) certification upon completion.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Is this course suitable for beginners?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Basic yoga knowledge is preferred, but the course is designed for yoga teachers, school teachers, parents, and wellness coaches.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "What age group does teen yoga cover?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Our teen yoga training focuses on adolescents aged 13-18 years with specialized techniques for this age group.",
-        },
-      },
-    ],
-  };
+
 
   return (
     <>
