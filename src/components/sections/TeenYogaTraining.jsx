@@ -144,7 +144,7 @@ export default function TeenYogaTraining() {
   return (
     <>
       <PageMeta
-        title="Teen Yoga Teacher Training Online from Indore | 14-Day YACEP Certified | Aatmya Yoga"
+        title="Teen Yoga Teacher Training Online | Global Access | 14-Day YACEP – Aatmya Yoga"
         description="Become a certified teen yoga teacher with our 14-day YACEP certified online training from Indore, Madhya Pradesh. Learn adolescent yoga techniques for mental health and mindful movement. India's best teen yoga certification."
         canonical="https://www.aatmyayoga.com/teen-yoga-training"
         schema={[courseSchema, localBusinessSchema, TeenFAQSchema]}
