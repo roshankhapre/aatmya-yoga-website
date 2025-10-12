@@ -1,5 +1,6 @@
 import { FaLeaf, FaCertificate, FaRegSmile, FaChild } from "react-icons/fa";
 import { GiMeditation, GiLotus } from "react-icons/gi";
+import { Helmet } from "react-helmet-async"; // ADD THIS IMPORT
 import yogaImg from "../../assets/face_yoga_expression_science_create_the.webp";
 import kidImg from "../../assets/full-shot-woman-kid-with-laptop.webp";
 import pranayamImg from "../../assets/pranayama_mudra_teacher_training_real_image.webp";
@@ -64,57 +65,77 @@ const otherPrograms = [
 
 export default function TeacherTraining() {
   return (
-    <section className="py-28 bg-gradient-to-b from-[#fbf8f3] to-[#e9e1d7]">
-      <div className="container mx-auto px-6 max-w-7xl">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-serif font-light text-[#5a4a42] mb-5 animate-fade-in">
-            Teacher Training & Certifications
-          </h2>
-          <p className="text-lg text-[#786a61] max-w-3xl mx-auto leading-relaxed">
-            Transform your passion into a meaningful profession with globally
-            recognized programs.
-          </p>
-          <div className="w-24 h-1 bg-[#c8a798] opacity-40 mx-auto mt-6 rounded-full"></div>
-        </div>
+    <>
+      <Helmet>
+        <title>
+          Yoga Teacher Training in Indore | 200hr Certification - Aatmya Yoga
+        </title>
+        <meta
+          name="description"
+          content="200hr Yoga Alliance certified teacher training in Indore. Become a certified yoga instructor with Face Yoga, Pranayama, Kids Yoga, and Yoga Therapy programs."
+        />
+        <link
+          rel="canonical"
+          href="https://www.aatmyayoga.com/teacher-training"
+        />
+        <meta
+          name="keywords"
+          content="yoga teacher training indore, 200hr yoga certification, face yoga teacher training, pranayama certification, kids yoga training"
+        />
+      </Helmet>
 
-        {/* Face Yoga Programs */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-serif text-center text-[#5a4a42] mb-10 flex items-center justify-center gap-2">
-            <FaRegSmile className="text-rose-400" /> Face Yoga Specializations
-          </h3>
-          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {faceYogaPrograms.map((program, i) => (
-              <ProgramCard key={i} program={program} />
-            ))}
+      <section className="py-28 bg-gradient-to-b from-[#fbf8f3] to-[#e9e1d7]">
+        <div className="container mx-auto px-6 max-w-7xl">
+          {/* Section Header */}
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-serif font-light text-[#5a4a42] mb-5 animate-fade-in">
+              Teacher Training & Certifications
+            </h2>
+            <p className="text-lg text-[#786a61] max-w-3xl mx-auto leading-relaxed">
+              Transform your passion into a meaningful profession with globally
+              recognized programs.
+            </p>
+            <div className="w-24 h-1 bg-[#c8a798] opacity-40 mx-auto mt-6 rounded-full"></div>
+          </div>
+
+          {/* Face Yoga Programs */}
+          <div className="mb-20">
+            <h3 className="text-2xl font-serif text-center text-[#5a4a42] mb-10 flex items-center justify-center gap-2">
+              <FaRegSmile className="text-rose-400" /> Face Yoga Specializations
+            </h3>
+            <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              {faceYogaPrograms.map((program, i) => (
+                <ProgramCard key={i} program={program} />
+              ))}
+            </div>
+          </div>
+
+          {/* Other Yoga TTCs */}
+          <div className="mb-20">
+            <h3 className="text-2xl font-serif text-center text-[#5a4a42] mb-10 flex items-center justify-center gap-2">
+              <GiLotus className="text-amber-400" /> Yoga Teacher Trainings
+            </h3>
+            <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              {otherPrograms.map((program, i) => (
+                <ProgramCard key={i} program={program} />
+              ))}
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-center mt-16">
+            <a
+              href="https://wa.me/918281094117?text=Hi!%20I'm%20interested%20in%20your%20teacher%20training%20programs.%20Can%20you%20share%20details%20about%20curriculum%20and%20pricing?"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 bg-gradient-to-r from-[#7a5a50] to-[#5a4a42] text-white font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:from-[#9f7164] hover:to-[#7a5a50]"
+            >
+              Enquire Now via WhatsApp
+            </a>
           </div>
         </div>
-
-        {/* Other Yoga TTCs */}
-        <div className="mb-20">
-          <h3 className="text-2xl font-serif text-center text-[#5a4a42] mb-10 flex items-center justify-center gap-2">
-            <GiLotus className="text-amber-400" /> Yoga Teacher Trainings
-          </h3>
-          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {otherPrograms.map((program, i) => (
-              <ProgramCard key={i} program={program} />
-            ))}
-          </div>
-        </div>
-
-        {/* CTA Button */}
-        <div className="text-center mt-16">
-          <a
-            href="https://wa.me/918281094117?text=Hi!%20I'm%20interested%20in%20your%20teacher%20training%20programs.%20Can%20you%20share%20details%20about%20curriculum%20and%20pricing?"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-gradient-to-r from-[#7a5a50] to-[#5a4a42] text-white font-medium rounded-full shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1 hover:from-[#9f7164] hover:to-[#7a5a50]"
-          >
-            Enquire Now via WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 

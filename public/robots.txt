@@ -1,5 +1,23 @@
-# public/robots.txt - CORRECTED
+# public/robots.txt
 User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: https://www.aatmyayoga.com/sitemap.xml
+
+# Disallow admin and private pages
+Disallow: /admin
+Disallow: /private
+Disallow: /api
+Disallow: /.env
+
+# Allow crawling of important paths
+Allow: /blog/
+Allow: /programs/
+Allow: /children-yoga-training/
+Allow: /teen-yoga-training/
+Allow: /teacher-training/
+Allow: /workshops/
+Allow: /testimonials/
+Allow: /contact/
+Allow: /about/
