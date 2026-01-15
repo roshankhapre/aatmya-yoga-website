@@ -3,7 +3,8 @@ import teenageYoga from "../assets//woman-practising-yoga-gym-with-trainer.webp"
 import stressYoga from "../assets//2surya-namaskar (2).webp";
 import kidsYoga from "../assets//kids_yoga_themes_workshop (1).webp";
 import rcysYoga from "../assets//woman-stretching-leg-by-back-beach.webp";
-
+import yogaGamesKids from "../assets//Kids Yoga.webp";
+import screenTimeYoga from "../assets//screen-time-to-stretch-time-yoga.webp";
 export const blogPosts = [
   {
     id: 1,
@@ -33,7 +34,7 @@ export const blogPosts = [
     `,
     slug: "benefits-yoga-teenagers-mental-health",
     author: "Aatmya Yoga Team",
-    publishDate: "2025-01-15",
+    publishDate: "2025-10-15",
     readTime: "5 min read",
     category: "Teen Yoga",
     tags: [
@@ -101,7 +102,7 @@ export const blogPosts = [
     `,
     slug: "become-children-yoga-teacher-india",
     author: "Aatmya Yoga Team",
-    publishDate: "2025-01-10",
+    publishDate: "2026-01-10",
     readTime: "7 min read",
     category: "Teacher Training",
     tags: [
@@ -191,7 +192,7 @@ export const blogPosts = [
     `,
     slug: "rcys-vs-yacep-certification-difference",
     author: "Aatmya Yoga Team",
-    publishDate: "2025-01-01",
+    publishDate: "2026-01-01",
     readTime: "4 min read",
     category: "Teacher Training",
     tags: [
@@ -207,6 +208,301 @@ export const blogPosts = [
         "Complete comparison between RCYS and YACEP yoga certifications. Choose the right Yoga Alliance certification for your teaching career in India.",
       keywords:
         "RCYS vs YACEP, yoga certification India, yoga alliance, teacher training certification",
+    },
+  },
+  {
+    id: 5,
+    title:
+      "Yoga Games for Kids: What They Are, Why They Matter, and How to Use Them",
+    excerpt:
+      "Discover how yoga games make yoga playful and meaningful for children while supporting their physical, emotional, and mental development.",
+    content: `
+    <h2>Making Yoga Fun and Meaningful for Children</h2>
+    <p>When we hear the word yoga, we often imagine silence, stillness, and long poses. But when yoga is offered to children, it needs a different approach. This is where Yoga Games come in. Yoga games make yoga playful, joyful, and meaningful for kids—without losing the essence of yoga.</p>
+    
+    <h3>What Are Yoga Games?</h3>
+    <p>Yoga games are structured play activities that use yoga poses, breathing, and mindfulness in a fun and engaging way.</p>
+    <p>In yoga games:</p>
+    <ul>
+      <li>Children move their bodies</li>
+      <li>Use imagination</li>
+      <li>Follow simple rules</li>
+      <li>Learn through play</li>
+    </ul>
+    <p>Yoga games are not random games. They are intentionally designed to support a child's physical, emotional, and mental development while keeping yoga principles intact.</p>
+    
+    <h3>Why Are They Called Yoga Games?</h3>
+    <p>They are called yoga games because they are rooted in yoga, not just play. A game is termed a Yoga Game when it includes:</p>
+    <ul>
+      <li>Yoga asanas (postures)</li>
+      <li>Conscious breathing</li>
+      <li>Awareness of body and mind</li>
+      <li>Calm transitions, not over-stimulation</li>
+      <li>Non-competitive spirit</li>
+    </ul>
+    <p>Unlike regular games that focus on winning or speed, yoga games focus on:</p>
+    <ul>
+      <li>Awareness</li>
+      <li>Balance</li>
+      <li>Coordination</li>
+      <li>Emotional regulation</li>
+    </ul>
+    <p>So, even though children are playing, they are still practicing yoga.</p>
+    
+    <h3>Importance of Yoga Games in Kids Yoga</h3>
+    <p>Yoga games are not just for fun—they are essential in a kids yoga class.</p>
+    
+    <h4>1. Matches a Child's Natural Learning Style</h4>
+    <p>Children learn best through movement and play. Yoga games meet children at their level instead of forcing adult-style yoga on them.</p>
+    
+    <h4>2. Improves Focus and Attention</h4>
+    <p>Games naturally hold a child's interest, helping them stay engaged longer without pressure.</p>
+    
+    <h4>3. Supports Emotional Expression</h4>
+    <p>Through games, children safely express emotions like excitement, anger, or shyness.</p>
+    
+    <h4>4. Builds Body Awareness</h4>
+    <p>Yoga games help children understand their bodies—how they move, balance, stretch, and relax.</p>
+    
+    <h4>5. Encourages Positive Association with Yoga</h4>
+    <p>When yoga feels fun, children are more likely to enjoy it and continue practicing as they grow.</p>
+    
+    <h3>Criteria for Adding Games in a Kids Yoga Class</h3>
+    <p>Not every game is suitable for a yoga class. A good yoga game should meet certain criteria:</p>
+    
+    <h4>1. Purposeful</h4>
+    <p>Every game should have a clear intention—balance, focus, relaxation, coordination, or breath awareness.</p>
+    
+    <h4>2. Age-Appropriate</h4>
+    <p>The game should match the child's physical and mental development.</p>
+    
+    <h4>3. Non-Competitive</h4>
+    <p>Yoga games avoid winners and losers. They promote cooperation, not comparison.</p>
+    
+    <h4>4. Safe and Simple</h4>
+    <p>Movements should be safe, slow, and easy to understand.</p>
+    
+    <h4>5. Connected to Yoga</h4>
+    <p>The game must include yoga elements—poses, breath, awareness, or relaxation.</p>
+    
+    <h4>6. Calm Entry and Exit</h4>
+    <p>The game should begin and end smoothly, without overstimulating children.</p>
+    
+    <h3>One Simple Example of a Yoga Game</h3>
+    
+    <h4>Tree Pose Freeze Game</h4>
+    <p><strong>Age Group:</strong> 4–8 years</p>
+    <p><strong>Purpose:</strong> Balance, focus, body awareness</p>
+    
+    <h4>How to Play:</h4>
+    <ol>
+      <li>Ask children to stand in Mountain Pose</li>
+      <li>Say: "We are trees in a forest"</li>
+      <li>Children move gently like trees in the wind</li>
+      <li>When the teacher says "Freeze!", children come into Tree Pose</li>
+      <li>Hold for 3–5 breaths</li>
+      <li>Relax and repeat</li>
+    </ol>
+    
+    <h4>Why This Works:</h4>
+    <ul>
+      <li>Improves balance and concentration</li>
+      <li>Encourages stillness after movement</li>
+      <li>Builds imagination with mindfulness</li>
+    </ul>
+    
+    <h3>Conclusion</h3>
+    <p>Yoga games are not an extra activity—they are a bridge between yoga and childhood. When used mindfully, yoga games:</p>
+    <ul>
+      <li>Keep children engaged</li>
+      <li>Preserve the depth of yoga</li>
+      <li>Support holistic development</li>
+    </ul>
+    <p>In kids yoga, play is the pathway, and yoga is the purpose. At Aatmya Yoga, our children's yoga programs incorporate carefully designed yoga games that make learning yoga a joyful and transformative experience.</p>
+  `,
+    slug: "yoga-games-for-kids-what-they-are-why-they-matter-how-to-use",
+    author: "Aatmya Yoga Team",
+    publishDate: "2025-01-02",
+    readTime: "8 min read",
+    category: "Children's Yoga",
+    tags: [
+      "yoga games",
+      "kids yoga",
+      "children's yoga",
+      "yoga for kids",
+      "playful yoga",
+      "yoga activities",
+    ],
+    image: yogaGamesKids, // Make sure to add this image to your assets
+    seo: {
+      title:
+        "Yoga Games for Kids: Benefits, Examples & How to Use | Aatmya Yoga",
+      description:
+        "Learn how yoga games make yoga fun for children while supporting development. Discover benefits, criteria, and example games for kids yoga classes.",
+      keywords:
+        "yoga games for kids, children's yoga activities, kids yoga games, playful yoga, yoga for children, mindfulness games",
+    },
+  },
+
+  {
+    id: 6,
+    title:
+      "Screen Time to Stretch Time: How Yoga Helps Kids Detox from Screens",
+    excerpt:
+      "Discover how yoga offers a natural solution to counteract excessive screen time effects on children's posture, eyesight, and mental wellbeing.",
+    content: `
+    <h2>Balancing Digital Life with Mindful Movement</h2>
+    <p>In today's digital age, screens have become an inseparable part of children's lives. Online classes, educational apps, cartoons, and games mean that many kids spend several hours a day in front of screens. While technology supports learning and entertainment, excessive screen time can negatively impact a child's physical, mental, and emotional well-being.</p>
+    <p>The good news is that yoga offers a simple, natural, and effective way to balance screen exposure and support healthy growth.</p>
+    
+    <h3>The Problem: Too Much Screen Time for Kids</h3>
+    <p>Studies and daily observations show that children today often spend 4–6 hours per day on digital devices. Over time, this lifestyle creates multiple challenges.</p>
+    
+    <h4>Common Issues Caused by Excessive Screen Time</h4>
+    
+    <h5>1. Poor Posture</h5>
+    <p>Prolonged sitting and device use often lead to slouching, forward head posture, and rounded shoulders. This can cause:</p>
+    <ul>
+      <li>Neck and back pain</li>
+      <li>Weak core muscles</li>
+      <li>Long-term postural imbalance</li>
+    </ul>
+    
+    <h5>2. Eye Strain and Visual Fatigue</h5>
+    <p>Extended screen exposure can result in:</p>
+    <ul>
+      <li>Dry or itchy eyes</li>
+      <li>Headaches</li>
+      <li>Difficulty focusing</li>
+      <li>Increased eye fatigue</li>
+    </ul>
+    
+    <h5>3. Reduced Physical Activity</h5>
+    <p>More screen time usually means less movement. This affects:</p>
+    <ul>
+      <li>Muscle strength and flexibility</li>
+      <li>Coordination and balance</li>
+      <li>Overall physical fitness</li>
+    </ul>
+    
+    <h5>4. Irritability and Restlessness</h5>
+    <p>Excessive digital stimulation can overload the nervous system, making children:</p>
+    <ul>
+      <li>Easily irritated</li>
+      <li>Restless or hyperactive</li>
+      <li>Less emotionally regulated</li>
+    </ul>
+    
+    <h3>Why Yoga Is an Ideal Solution for Screen-Exposed Kids</h3>
+    <p>Yoga addresses the body, breath, and mind together, making it a powerful tool for counteracting the effects of screen overload.</p>
+    
+    <h4>Benefits of Yoga for Children</h4>
+    <ul>
+      <li>Improves posture and spinal health</li>
+      <li>Relaxes eye muscles and the nervous system</li>
+      <li>Encourages healthy movement habits</li>
+      <li>Enhances focus and emotional balance</li>
+      <li>Supports overall physical and mental well-being</li>
+    </ul>
+    
+    <h3>Simple Yoga Solutions to Reduce Screen-Related Stress</h3>
+    <p>These yoga practices are easy, safe, and enjoyable for children, and can be practiced at home, in schools, or during online classes.</p>
+    
+    <h4>1. Cat–Cow Pose (Marjaryasana–Bitilasana)</h4>
+    <p><strong>Best for:</strong> Spinal mobility and posture correction</p>
+    <p><strong>Benefits:</strong></p>
+    <ul>
+      <li>Releases tension in the neck, shoulders, and back</li>
+      <li>Improves spinal flexibility</li>
+      <li>Counteracts the effects of prolonged sitting</li>
+    </ul>
+    <p><strong>Practice:</strong> Guide children through 5–8 slow rounds, synchronizing movement with breathing.</p>
+    
+    <h4>2. Eye Yoga (Palming and Blinking)</h4>
+    <p><strong>Best for:</strong> Eye strain and mental relaxation</p>
+    
+    <h5>Palming:</h5>
+    <ul>
+      <li>Rub the palms together to generate warmth</li>
+      <li>Gently place palms over closed eyes</li>
+      <li>Relax for 30–60 seconds</li>
+    </ul>
+    
+    <h5>Blinking:</h5>
+    <ul>
+      <li>Blink rapidly 10 times</li>
+      <li>Close the eyes and relax</li>
+      <li>Repeat for 2–3 rounds</li>
+    </ul>
+    <p>This practice helps relax eye muscles and refresh the brain.</p>
+    
+    <h4>3. Tree Pose (Vrikshasana)</h4>
+    <p><strong>Best for:</strong> Balance, focus, and grounding</p>
+    <p><strong>Benefits:</strong></p>
+    <ul>
+      <li>Improves concentration and body awareness</li>
+      <li>Strengthens legs and core muscles</li>
+      <li>Calms restless energy</li>
+    </ul>
+    <p>Hold the pose for 10–20 seconds on each side.</p>
+    
+    <h4>4. The 5-Minute Stretch Break Rule</h4>
+    <p><strong>Best daily habit for children using screens</strong></p>
+    <p>After every 45–60 minutes of screen time, encourage children to take a short break that includes:</p>
+    <ul>
+      <li>Neck stretches</li>
+      <li>Shoulder rolls</li>
+      <li>Forward bends</li>
+      <li>Gentle twists</li>
+    </ul>
+    <p>Just five minutes of movement can help reset the body and mind.</p>
+    
+    <h3>Creating a Healthy Balance Between Screen Time and Movement</h3>
+    <p>Yoga is not about eliminating screens completely—it is about creating awareness and balance.</p>
+    
+    <h4>Tips for Parents and Teachers</h4>
+    <ul>
+      <li>Encourage daily yoga or stretching routines</li>
+      <li>Schedule movement breaks during screen use</li>
+      <li>Keep yoga fun and pressure-free</li>
+      <li>Model healthy screen habits</li>
+      <li>Avoid screens before bedtime</li>
+    </ul>
+    
+    <h3>Conclusion</h3>
+    <p>Screens are a part of modern childhood, but movement is essential for healthy development.</p>
+    <p>By introducing simple yoga practices into a child's daily routine, we can help them:</p>
+    <ul>
+      <li>Improve posture</li>
+      <li>Protect their eyes</li>
+      <li>Stay calm and focused</li>
+      <li>Grow stronger and healthier</li>
+    </ul>
+    <p>Let's transform screen time into stretch time, one mindful movement at a time.</p>
+    <p>At Aatmya Yoga, we design children's yoga programs specifically to address the challenges of the digital age, helping kids in Indore develop healthy habits for lifelong wellbeing.</p>
+  `,
+    slug: "screen-time-to-stretch-time-yoga-helps-kids-detox-from-screens",
+    author: "Aatmya Yoga Team",
+    publishDate: "2026-01-15",
+    readTime: "7 min read",
+    category: "Children's Yoga",
+    tags: [
+      "screen time",
+      "kids yoga",
+      "digital detox",
+      "yoga for posture",
+      "eye yoga",
+      "children's health",
+      "yoga for focus",
+    ],
+    image: screenTimeYoga, // Add this image to your assets folder
+    seo: {
+      title:
+        "Screen Time to Stretch Time: Yoga for Kids in Digital Age | Aatmya Yoga",
+      description:
+        "Learn how yoga helps children detox from excessive screen time. Simple poses and tips to improve posture, reduce eye strain, and enhance focus in kids.",
+      keywords:
+        "yoga for screen time, kids digital detox, children's posture yoga, eye yoga for kids, yoga for focus, screen time balance, kids health yoga",
     },
   },
 ];
