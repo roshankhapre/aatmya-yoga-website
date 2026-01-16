@@ -3,6 +3,7 @@ import kunalImage from "../../assets/kunal-mishra.jpg";
 import rajaniImage from "../../assets/dr-rajani-bala.jpg";
 import vanshImage from "../../assets/vansh-raghav.jpg";
 import roshanImage from "../../assets/roshanImage.png";
+import founderImage from "../../assets/founder-steni-k-thomas.jpg";
 
 import { FaLeaf, FaWhatsapp, FaGlobe } from "react-icons/fa";
 
@@ -10,6 +11,15 @@ export default function TeamSection() {
   const teamMembers = [
     {
       id: 1,
+      name: "Steni K Thomas",
+      role: "Founder & Lead Guide",
+      experience: "E-RYT® 500, RYT® 500, RCYT®, RPYT®, YACEP®",
+      description:
+        "With over a decade of dedicated practice and teaching, Steni's approach blends traditional wisdom with modern understanding, creating a space where students of all levels can awaken to their fullest potential. Her teachings emphasize the unity of movement, breath, and awareness.",
+      image: founderImage,
+    },
+    {
+      id: 2,
       name: "Dr. Shalini Verma Tonk",
       role: "BAMS · Ayurveda Mentor",
       experience: "14+ years in holistic Ayurvedic healing",
@@ -18,7 +28,7 @@ export default function TeamSection() {
       image: mentorImage,
     },
     {
-      id: 2,
+      id: 3,
       name: "Kunal Mishra",
       role: "Advanced Yoga Master",
       experience: "6+ years in advanced practices and alignment precision",
@@ -27,7 +37,7 @@ export default function TeamSection() {
       image: kunalImage,
     },
     {
-      id: 3,
+      id: 4,
       name: "Vansh Raghav",
       role: "Ashtanga Vinyasa Yoga Teacher",
       experience: "6+ years teaching traditional Mysore-style yoga",
@@ -36,7 +46,7 @@ export default function TeamSection() {
       image: vanshImage,
     },
     {
-      id: 4,
+      id: 5,
       name: "Roshan Khapre",
       role: "Freelancer · UI/UX & Fullstack",
       experience: "Crafting digital experiences with design + code",
@@ -50,7 +60,7 @@ export default function TeamSection() {
       ],
       image: roshanImage,
       isDeveloper: true,
-      website: "https://www.hiddenleaftechnologies.com/",
+      website: "https://hiddenleaf.vercel.app/",
     },
   ];
 

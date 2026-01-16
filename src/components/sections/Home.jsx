@@ -39,7 +39,7 @@ export default function Home() {
       <ChildrenYogaTraining95 />
       <TeenYogaTraining />
       <AboutSection />
-      <FounderSection />
+
       <AccreditationSection />
       <TeamSection />
       <Programs />
