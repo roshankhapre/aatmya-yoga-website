@@ -55,7 +55,7 @@ export default function Navbar() {
     "@type": "YogaStudio",
     name: "Aatmya Yoga",
     description:
-      "Professional yoga classes in Indore offering children yoga, teen yoga, and teacher training programs",
+      "Professional yoga classes in Indore offering children yoga, teen yoga, teacher training, and biomechanics courses",
     url: "https://yourwebsite.com",
     telephone: "+918281094117",
     email: "yogasteni@gmail.com",
@@ -68,8 +68,9 @@ export default function Navbar() {
     areaServed: "Indore",
     offers: {
       "@type": "Service",
-      name: "Yoga Classes",
-      description: "Yoga training for children, teens and adults in Indore",
+      name: "Yoga Classes & Training",
+      description:
+        "Yoga training for all ages including specialized biomechanics courses",
     },
   };
 
@@ -139,7 +140,7 @@ export default function Navbar() {
               <div
                 role="menu"
                 aria-label="Yoga programs"
-                className={`absolute left-0 top-full mt-3 bg-white/95 backdrop-blur-md shadow-lg rounded-xl border border-emerald-100/50 w-64 z-50 transition-all duration-300 transform origin-top ${
+                className={`absolute left-0 top-full mt-3 bg-white/95 backdrop-blur-md shadow-lg rounded-xl border border-emerald-100/50 w-72 z-50 transition-all duration-300 transform origin-top ${
                   desktopDropdownOpen
                     ? "opacity-100 scale-100 translate-y-0"
                     : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
@@ -157,15 +158,15 @@ export default function Navbar() {
                   <Link
                     to="/children-yoga-training"
                     role="menuitem"
-                    className="flex items-center px-4 py-3 text-emerald-800/90 hover:bg-emerald-50/80 rounded-lg transition-all duration-300 group/item border-b border-emerald-50/50 last:border-b-0"
+                    className="flex items-center px-4 py-3 text-emerald-800/90 hover:bg-emerald-50/80 rounded-lg transition-all duration-300 group/item border-b border-emerald-50/50"
                     onClick={() => setDesktopDropdownOpen(false)}
                   >
                     <div className="flex-1">
                       <div className="font-medium text-emerald-900 group-hover/item:text-emerald-700 transition-colors">
-                        Children Yoga
+                        Children Yoga Training
                       </div>
                       <div className="text-xs text-emerald-600/80 mt-1">
-                        Ages 6-12
+                        Ages 6-12 | Yoga Alliance Certified
                       </div>
                     </div>
                     <div
@@ -177,15 +178,15 @@ export default function Navbar() {
                   <Link
                     to="/teen-yoga-training"
                     role="menuitem"
-                    className="flex items-center px-4 py-3 text-emerald-800/90 hover:bg-emerald-50/80 rounded-lg transition-all duration-300 group/item border-b border-emerald-50/50 last:border-b-0"
+                    className="flex items-center px-4 py-3 text-emerald-800/90 hover:bg-emerald-50/80 rounded-lg transition-all duration-300 group/item border-b border-emerald-50/50"
                     onClick={() => setDesktopDropdownOpen(false)}
                   >
                     <div className="flex-1">
                       <div className="font-medium text-emerald-900 group-hover/item:text-emerald-700 transition-colors">
-                        Teen Yoga
+                        Teen Yoga Program
                       </div>
                       <div className="text-xs text-emerald-600/80 mt-1">
-                        Ages 13-18
+                        Ages 13-18 | Mind-Body Balance
                       </div>
                     </div>
                     <div
@@ -197,7 +198,7 @@ export default function Navbar() {
                   <Link
                     to="/teacher-training"
                     role="menuitem"
-                    className="flex items-center px-4 py-3 text-emerald-800/90 hover:bg-emerald-50/80 rounded-lg transition-all duration-300 group/item"
+                    className="flex items-center px-4 py-3 text-emerald-800/90 hover:bg-emerald-50/80 rounded-lg transition-all duration-300 group/item border-b border-emerald-50/50"
                     onClick={() => setDesktopDropdownOpen(false)}
                   >
                     <div className="flex-1">
@@ -205,7 +206,28 @@ export default function Navbar() {
                         Teacher Training
                       </div>
                       <div className="text-xs text-emerald-600/80 mt-1">
-                        Certification Program
+                        Yoga Alliance Certification Program
+                      </div>
+                    </div>
+                    <div
+                      className="w-2 h-2 bg-emerald-400 rounded-full opacity-0 group-hover/item:opacity-100 transition-opacity"
+                      aria-hidden="true"
+                    ></div>
+                  </Link>
+
+                  {/* NEW: Yoga Biomechanics Course */}
+                  <Link
+                    to="/yoga-biomechanics-course"
+                    role="menuitem"
+                    className="flex items-center px-4 py-3 text-emerald-800/90 hover:bg-emerald-50/80 rounded-lg transition-all duration-300 group/item"
+                    onClick={() => setDesktopDropdownOpen(false)}
+                  >
+                    <div className="flex-1">
+                      <div className="font-medium text-emerald-900 group-hover/item:text-emerald-700 transition-colors">
+                        Yoga Biomechanics Course
+                      </div>
+                      <div className="text-xs text-emerald-600/80 mt-1">
+                        1-Month Intensive | Science-Based Teaching
                       </div>
                     </div>
                     <div
@@ -274,7 +296,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div
@@ -347,6 +368,25 @@ export default function Navbar() {
                     aria-hidden="true"
                   ></div>
                 </Link>
+
+                {/* NEW: Yoga Biomechanics Course Mobile Link */}
+                <Link
+                  to="/yoga-biomechanics-course"
+                  role="menuitem"
+                  className="flex items-center justify-between px-4 py-3 text-emerald-700 hover:bg-white rounded-lg transition-all duration-300 group"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <div>
+                    <div className="font-medium">Yoga Biomechanics Course</div>
+                    <div className="text-xs text-emerald-600/80 mt-1">
+                      1-Month Intensive Training
+                    </div>
+                  </div>
+                  <div
+                    className="w-2 h-2 bg-emerald-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                    aria-hidden="true"
+                  ></div>
+                </Link>
               </div>
             </div>
 
@@ -368,7 +408,7 @@ export default function Navbar() {
               About Our Yoga Studio
             </Link>
 
-            {/* ✅ Added Blog Link */}
+            {/* ✅ Blog Link */}
             <Link
               to="/blog"
               role="menuitem"

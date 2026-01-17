@@ -13,6 +13,7 @@ import TeenYogaTraining from "./TeenYogaTraining";
 import Testimonials from "./Testimonials";
 import Workshops from "./Workshops";
 import PageMeta from "../seo/PageMeta";
+import YogaMechanicsCourse from "./YogaMechanicsCourse";
 
 export default function Home() {
   // ✅ Only add page-specific schema, DON'T override title/description
@@ -36,6 +37,7 @@ export default function Home() {
 
       {/* Your existing home content */}
       <Hero />
+      <YogaMechanicsCourse />
       <ChildrenYogaTraining95 />
       <TeenYogaTraining />
       <AboutSection />

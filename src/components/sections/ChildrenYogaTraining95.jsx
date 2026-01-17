@@ -233,7 +233,7 @@ export default function ChildrenYogaTraining95() {
                       Duration
                     </p>
                     <p className="font-bold text-[#5a4a42] text-base sm:text-lg">
-                      8 Weeks
+                      1 Month
                     </p>
                   </div>
                   <div className="bg-[#f9f5f0] border border-[#e6ded7] p-4 sm:p-5 rounded-xl text-center shadow-sm hover:shadow-md transition">

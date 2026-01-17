@@ -14,7 +14,7 @@ export default function Footer() {
     "@type": "YogaStudio",
     name: "Aatmya Yoga",
     description:
-      "Professional yoga studio in Indore offering yoga classes for children, teens, adults, and teacher training certification",
+      "Professional yoga studio in Indore offering yoga classes for children, teens, adults, teacher training certification, and specialized biomechanics courses",
     url: "https://yourwebsite.com",
     telephone: "+91-82810-94117",
     email: "yogasteni@gmail.com",
@@ -74,8 +74,8 @@ export default function Footer() {
               <p className="text-[#c8b6a8] leading-relaxed">
                 Professional yoga studio in Indore nurturing harmony between
                 body, mind, and spirit through authentic yoga practice. Offering
-                children yoga, teen yoga, and certified teacher training
-                programs.
+                specialized programs in yoga biomechanics, children yoga, teen
+                yoga, and certified teacher training.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -134,20 +134,21 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
+                    href="/yoga-biomechanics-course"
+                    className="hover:text-white transition-colors duration-300"
+                  >
+                    Yoga Biomechanics Course
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="/workshops"
                     className="hover:text-white transition-colors duration-300"
                   >
                     Yoga Workshops
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/adult-classes"
-                    className="hover:text-white transition-colors duration-300"
-                  >
-                    Adult Yoga Classes
-                  </a>
-                </li>
+              
               </ul>
             </div>
 
@@ -199,8 +200,8 @@ export default function Footer() {
               </h3>
               <p className="text-[#c8b6a8]">
                 Subscribe to our newsletter for yoga tips, workshop
-                announcements, and mindfulness updates from Aatmya Yoga Studio
-                in Indore.
+                announcements, biomechanics insights, and mindfulness updates
+                from Aatmya Yoga Studio in Indore.
               </p>
               <form
                 className="mt-4 flex"
