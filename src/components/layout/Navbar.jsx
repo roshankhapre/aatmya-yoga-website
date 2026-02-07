@@ -105,8 +105,8 @@ export default function Navbar() {
             <img
               src={logo}
               alt="Aatmya Yoga – Professional Yoga Classes in Indore"
-              className="h-14 w-16 shadow-sm"
-              width="64"
+              className="h-14 w-16 "
+              width=""
               height="56"
             />
             <span className="sr-only">

@@ -1,7 +1,7 @@
 import React from "react";
-import yacep from "../../assets/yacep_yoga-removebg-preview.png";
+import yacep from "../../assets/yacef.png";
 import yoga_alliance from "../../assets/yoga_alliance-removebg-preview.png";
-import rcys from "../../assets/rcys_yoga_-removebg-preview.png";
+import rcys from "../../assets/rcys_children.png";
 import IYA from "../../assets/Indian_Yoga_Association.png";
 
 export default function AccreditationSection() {
