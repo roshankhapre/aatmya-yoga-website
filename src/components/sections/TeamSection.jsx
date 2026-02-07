@@ -13,11 +13,23 @@ export default function TeamSection() {
       id: 1,
       name: "Steni K Thomas",
       role: "Founder & Lead Guide",
-      experience: "E-RYT® 500, RYT® 500, RCYT®, RPYT®, YACEP®",
+
+      certifications: [
+        "E-RYT® 500",
+        "RCYT®",
+        "RPYT®",
+        "YACEP®",
+        "Yog Prashikshak – IYA/2025/YP9423",
+      ],
+
+      experience: "10+ Years Teaching & Training Experience",
+
       description:
-        "With over a decade of dedicated practice and teaching, Steni's approach blends traditional wisdom with modern understanding, creating a space where students of all levels can awaken to their fullest potential. Her teachings emphasize the unity of movement, breath, and awareness.",
+        "With over a decade of dedicated practice and teaching, Steni's approach blends traditional wisdom with modern understanding, creating a space where students of all levels can awaken to their fullest potential.",
+
       image: founderImage,
     },
+
     {
       id: 2,
       name: "Dr. Shalini Verma Tonk",
@@ -108,6 +120,22 @@ export default function TeamSection() {
                   <FaLeaf className="text-xs" />
                   <span>{member.role}</span>
                 </div>
+
+                {/* Certifications */}
+                {member.certifications && (
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {member.certifications.map((cert, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 text-xs rounded-full
+        bg-[#f3e8e2] text-[#9f7164]
+        border border-[#e8d5c4]/60"
+                      >
+                        {cert}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 <p className="text-sm mb-4 leading-relaxed border-b pb-4 text-[#7a6359] border-[#e8d5c4]/40">
                   {member.experience}

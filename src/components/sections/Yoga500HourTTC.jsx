@@ -389,7 +389,7 @@ export default function Yoga500HourTTC() {
               </div>
 
               {/* Batch Selection */}
-              <div className="space-y-4 mb-8">
+              {/* <div className="space-y-4 mb-8">
                 <h4 className="text-lg font-medium text-[#5a4a42] mb-3">
                   Upcoming Batches:
                 </h4>
@@ -410,7 +410,7 @@ export default function Yoga500HourTTC() {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
 
               {/* CTA Buttons */}
               <div className="space-y-4 mb-8">

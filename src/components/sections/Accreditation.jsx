@@ -3,7 +3,7 @@ import yacep from "../../assets/yacef.png";
 import yoga_alliance from "../../assets/yoga_alliance-removebg-preview.png";
 import rcys from "../../assets/rcys_children.png";
 import IYA from "../../assets/Indian_Yoga_Association.png";
-
+import rys from "../../assets/rys.png";
 export default function AccreditationSection() {
   const logos = [
     {
@@ -26,6 +26,12 @@ export default function AccreditationSection() {
       alt: "Indian Yoga Association Accreditation",
       description: "Recognized by Indian Yoga Association",
     },
+   {
+      src: rys, 
+      alt: "RYS 500 Yoga Alliance Accreditation",
+      description: "Yoga Alliance Registered Yoga School (500 Hour Level)",
+    },
+
   ];
 
   return (
@@ -49,7 +55,7 @@ export default function AccreditationSection() {
         </div>
 
         {/* Logos */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {logos.map((logo, index) => (
             <div key={index} className="relative group">
               {/* Main card */}
