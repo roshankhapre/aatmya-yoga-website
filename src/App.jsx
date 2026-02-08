@@ -18,6 +18,7 @@ import Testimonials from "./components/sections/Testimonials";
 import BlogList from "./components/blog/BlogList";
 import BlogPost from "./components/blog/BlogPost";
 import YogaBiomechanicsCourse from "./components/sections/YogaMechanicsCourse";
+import Policies from "./components/sections/policies";
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
           />
           <Route path="/teen-yoga-training" element={<TeenYogaTraining />} />
           <Route path="/teacher-training" element={<TeacherTraining />} />
+          <Route path="/privacy-policy" element={<Policies />} />
           <Route
             path="/yoga-biomechanics-course"
             element={<YogaBiomechanicsCourse />}

@@ -8,19 +8,19 @@ import {
 } from "react-icons/fa";
 
 export default function Footer() {
-  // Local Business Schema for Yoga Studio
+
+  // Local Business Schema
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "YogaStudio",
     name: "Aatmya Yoga",
     description:
-      "Professional yoga studio in Indore offering yoga classes for children, teens, adults, teacher training certification, and specialized biomechanics courses",
+      "Professional yoga studio in Indore offering yoga classes, teacher training, biomechanics courses and wellness programs",
     url: "https://yourwebsite.com",
     telephone: "+91-82810-94117",
     email: "yogasteni@gmail.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Indore",
       addressLocality: "Indore",
       addressRegion: "Madhya Pradesh",
       postalCode: "452001",
@@ -31,17 +31,6 @@ export default function Footer() {
       latitude: "22.7196",
       longitude: "75.8577",
     },
-    openingHours: "Mo-Su 06:00-20:00",
-    priceRange: "$$",
-    serviceArea: {
-      "@type": "GeoCircle",
-      geoMidpoint: {
-        "@type": "GeoCoordinates",
-        latitude: "22.7196",
-        longitude: "75.8577",
-      },
-      geoRadius: "20000",
-    },
     sameAs: [
       "https://www.instagram.com/aatmya_yoga/",
       "https://www.facebook.com/Aatmya.Yoga",
@@ -51,7 +40,7 @@ export default function Footer() {
 
   return (
     <>
-      {/* JSON-LD Schema Markup */}
+      {/* Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -59,198 +48,164 @@ export default function Footer() {
         }}
       />
 
-      <footer
-        role="contentinfo"
-        aria-label="Website footer"
-        className="bg-[#5a4a42] text-[#e8dfd5] pt-16 pb-8"
-      >
+      <footer className="bg-[#5a4a42] text-[#e8dfd5] pt-16 pb-8">
         <div className="container mx-auto px-6 max-w-7xl">
+
+          {/* ================= GRID SECTION ================= */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            {/* Brand Column */}
+
+            {/* Brand */}
             <div className="space-y-6">
-              <h2 className="text-2xl font-serif font-light tracking-wide">
+              <h2 className="text-2xl font-serif font-light">
                 Aatmya Yoga
               </h2>
+
               <p className="text-[#c8b6a8] leading-relaxed">
                 Professional yoga studio in Indore nurturing harmony between
-                body, mind, and spirit through authentic yoga practice. Offering
-                specialized programs in yoga biomechanics, children yoga, teen
-                yoga, and certified teacher training.
+                body, mind, and spirit through authentic yoga practice.
               </p>
+
               <div className="flex space-x-4">
                 <a
-                  href="https://www.instagram.com/aatmya_yoga/?hl=en"
-                  aria-label="Follow us on Instagram"
-                  className="text-[#c8b6a8] hover:text-white transition-colors duration-300"
+                  href="https://www.instagram.com/aatmya_yoga/"
+                  className="hover:text-white transition"
                 >
-                  <FaInstagram className="text-xl" aria-hidden="true" />
+                  <FaInstagram />
                 </a>
                 <a
                   href="https://www.facebook.com/Aatmya.Yoga"
-                  aria-label="Follow us on Facebook"
-                  className="text-[#c8b6a8] hover:text-white transition-colors duration-300"
+                  className="hover:text-white transition"
                 >
-                  <FaFacebook className="text-xl" aria-hidden="true" />
+                  <FaFacebook />
                 </a>
                 <a
                   href="https://www.youtube.com/@aatmyayoga_steni"
-                  aria-label="Subscribe to our YouTube channel"
-                  className="text-[#c8b6a8] hover:text-white transition-colors duration-300"
+                  className="hover:text-white transition"
                 >
-                  <FaYoutube className="text-xl" aria-hidden="true" />
+                  <FaYoutube />
                 </a>
               </div>
             </div>
 
-            {/* Quick Links */}
-            <div className="space-y-4">
-              <h3 className="font-serif text-lg font-light mb-4">
+            {/* Programs */}
+            <div>
+              <h3 className="mb-4 font-serif text-lg">
                 Yoga Programs
               </h3>
-              <ul className="space-y-3" role="list">
+
+              <ul className="space-y-2 text-[#c8b6a8]">
                 <li>
-                  <a
-                    href="/children-yoga-training"
-                    className="hover:text-white transition-colors duration-300"
-                  >
-                    Children Yoga (6-12 years)
+                  <a href="/children-yoga-training" className="hover:text-white">
+                    Children Yoga
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/teen-yoga-training"
-                    className="hover:text-white transition-colors duration-300"
-                  >
-                    Teen Yoga (13-18 years)
+                  <a href="/teen-yoga-training" className="hover:text-white">
+                    Teen Yoga
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/teacher-training"
-                    className="hover:text-white transition-colors duration-300"
-                  >
+                  <a href="/teacher-training" className="hover:text-white">
                     Teacher Training
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/yoga-biomechanics-course"
-                    className="hover:text-white transition-colors duration-300"
-                  >
-                    Yoga Biomechanics Course
+                  <a href="/yoga-biomechanics-course" className="hover:text-white">
+                    Biomechanics Course
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="/workshops"
-                    className="hover:text-white transition-colors duration-300"
-                  >
-                    Yoga Workshops
-                  </a>
-                </li>
-              
               </ul>
             </div>
 
-            {/* Contact Info */}
-            <div className="space-y-4">
-              <h3 className="font-serif text-lg font-light mb-4">
-                Contact Info
+            {/* Contact */}
+            <div>
+              <h3 className="mb-4 font-serif text-lg">
+                Contact
               </h3>
-              <ul className="space-y-3" role="list">
-                <li className="flex items-start gap-3">
-                  <FaEnvelope
-                    className="mt-1 text-[#c8b6a8]"
-                    aria-hidden="true"
-                  />
-                  <a
-                    href="mailto:yogasteni@gmail.com"
-                    className="hover:text-white transition-colors duration-300"
-                  >
-                    yogasteni@gmail.com
-                  </a>
+
+              <ul className="space-y-3 text-[#c8b6a8]">
+                <li className="flex gap-2 items-start">
+                  <FaEnvelope className="mt-1" />
+                  yogasteni@gmail.com
                 </li>
-                <li className="flex items-start gap-3">
-                  <FaPhone className="mt-1 text-[#c8b6a8]" aria-hidden="true" />
-                  <a
-                    href="tel:+918281094117"
-                    className="hover:text-white transition-colors duration-300"
-                  >
-                    +91 82810 94117
-                  </a>
+
+                <li className="flex gap-2 items-start">
+                  <FaPhone className="mt-1" />
+                  +91 82810 94117
                 </li>
-                <li className="flex items-start gap-3">
-                  <FaMapMarkerAlt
-                    className="mt-1 text-[#c8b6a8]"
-                    aria-hidden="true"
-                  />
-                  <span>
-                    <strong>Yoga Studio in Indore</strong>
-                    <br />
-                    Madhya Pradesh, India
-                  </span>
+
+                <li className="flex gap-2 items-start">
+                  <FaMapMarkerAlt className="mt-1" />
+                  Indore, Madhya Pradesh
                 </li>
               </ul>
             </div>
 
             {/* Newsletter */}
-            <div className="space-y-4">
-              <h3 className="font-serif text-lg font-light mb-4">
+            <div>
+              <h3 className="mb-4 font-serif text-lg">
                 Yoga Updates
               </h3>
-              <p className="text-[#c8b6a8]">
-                Subscribe to our newsletter for yoga tips, workshop
-                announcements, biomechanics insights, and mindfulness updates
-                from Aatmya Yoga Studio in Indore.
+
+              <p className="text-[#c8b6a8] mb-4">
+                Get yoga tips, workshops and TTC updates.
               </p>
-              <form
-                className="mt-4 flex"
-                role="form"
-                aria-label="Newsletter subscription"
-              >
+
+              <form className="flex">
                 <input
                   type="email"
-                  name="email"
-                  placeholder="Your email address"
-                  aria-label="Email for newsletter"
-                  className="px-4 py-2 w-full rounded-l-full bg-[#6d5b53] text-white placeholder-[#c8b6a8] focus:outline-none focus:ring-1 focus:ring-[#c8a798]"
-                  required
+                  placeholder="Your email"
+                  className="px-4 py-2 w-full rounded-l-full bg-[#6d5b53] text-white placeholder-[#c8b6a8]"
                 />
-                <button
-                  type="submit"
-                  aria-label="Subscribe to newsletter"
-                  className="bg-[#c8a798] hover:bg-[#9f7164] text-[#5a4a42] px-4 py-2 rounded-r-full transition-colors duration-300 font-medium"
-                >
+                <button className="bg-[#c8a798] px-4 rounded-r-full">
                   Join
                 </button>
               </form>
             </div>
+
           </div>
 
-          {/* Divider */}
-          <div
-            className="border-t border-[#6d5b53] my-8"
-            aria-hidden="true"
-          ></div>
+          {/* ================= DIVIDER ================= */}
+          <div className="border-t border-[#6d5b53] my-8" />
 
-          {/* Bottom Bar */}
-          <div className="flex flex-col md:flex-row justify-between items-center text-[#c8b6a8] text-sm">
-            <div className="mb-2 md:mb-0">
-              © {new Date().getFullYear()} Aatmya Yoga - Yoga Classes in Indore.
-              All rights reserved.
+          {/* ================= BOTTOM BAR ================= */}
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-[#c8b6a8]">
+
+            {/* Left */}
+            <div>
+              © {new Date().getFullYear()} Aatmya Yoga. All rights reserved.
             </div>
-            <div className="text-center md:text-right">
-              Professional yoga website by{" "}
+
+            {/* Center Policies */}
+            <div className="flex gap-3">
+              <a href="/privacy-policy" className="hover:text-white transition">
+                Privacy Policy
+              </a>
+              <span>|</span>
+              <a href="/terms-conditions" className="hover:text-white transition">
+                Terms
+              </a>
+              <span>|</span>
+              <a href="/refund-policy" className="hover:text-white transition">
+                Refund
+              </a>
+            </div>
+
+            {/* Right Credit */}
+            <div>
+              Website by{" "}
               <a
                 href="https://hiddenleaftechnologies.com"
                 target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="hover:text-white transition-colors duration-300 underline underline-offset-2"
+                rel="noopener noreferrer"
+                className="underline hover:text-white"
               >
                 Hidden Leaf Technologies
               </a>
             </div>
+
           </div>
+
         </div>
       </footer>
     </>
